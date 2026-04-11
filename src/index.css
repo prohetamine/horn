@@ -1,0 +1,122 @@
+body, #root {
+    padding: 0;
+    margin: 0;
+	height: 100%;
+	min-height: 100vh;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-synthesis: none;
+	background-color: var(--color-base-main);
+}
+
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-Thin.ttf') format('truetype'); font-weight: 100; font-style: normal; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-ExtraLight.ttf') format('truetype'); font-weight: 200; font-style: normal; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-Light.ttf') format('truetype'); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-Medium.ttf') format('truetype'); font-weight: 500; font-style: normal; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-SemiBold.ttf') format('truetype'); font-weight: 600; font-style: normal; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-ExtraBold.ttf') format('truetype'); font-weight: 800; font-style: normal; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-Black.ttf') format('truetype'); font-weight: 900; font-style: normal; }
+
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-ThinItalic.ttf') format('truetype'); font-weight: 100; font-style: italic; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-ExtraLightItalic.ttf') format('truetype'); font-weight: 200; font-style: italic; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-LightItalic.ttf') format('truetype'); font-weight: 300; font-style: italic; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-Italic.ttf') format('truetype'); font-weight: 400; font-style: italic; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-MediumItalic.ttf') format('truetype'); font-weight: 500; font-style: italic; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-SemiBoldItalic.ttf') format('truetype'); font-weight: 600; font-style: italic; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-BoldItalic.ttf') format('truetype'); font-weight: 700; font-style: italic; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-ExtraBoldItalic.ttf') format('truetype'); font-weight: 800; font-style: italic; }
+@font-face { font-family: 'Inter'; src: url('./assets/fonts/Inter_24pt-BlackItalic.ttf') format('truetype'); font-weight: 900; font-style: italic; }
+ 
+:root {
+	--color-base-main: #fff;
+	--color-base-main-black: #2c2c2c;
+	--color-base-light-gray: #f3f3f3;
+	--color-base-dark-gray: #b6b6b6;
+	--color-base-gray: #d2d2d2;
+	--color-poll-red: #ff3b30;
+	--color-poll-orange: #ff9500;
+	--color-poll-yellow: #fc0;
+	--color-poll-green: #34c759;
+	--color-poll-light-green: #00c7be;
+	--color-poll-blue-green: #30b0c7;
+	--color-poll-light-blue: #32ade6;
+	--color-poll-blue: #007aff;
+	--color-poll-purple: #5856d6;
+	--color-poll-purple-light: #af52de;
+	--color-poll-pink: #ff2d55;
+	--color-poll-brown: #a2845e;
+	--color-poll-black: #010101;
+	--color-base-start-warning-bg: #eee493;
+	--color-base-end-warning-bg: #f0e372;
+	--color-base-warning-elems: #968601;
+	--color-poll-opacity-red: rgba(255, 59, 48, 0.2);
+	--color-poll-opacity-orange: rgba(255, 149, 0, 0.2);
+	--color-poll-opacity-yellow: rgba(255, 204, 0, 0.2);
+	--color-poll-opacity-green: rgba(52, 199, 89, 0.2);
+	--color-poll-opacity-light-green: rgba(0, 146, 199, 0.2);
+	--color-poll-opacity-blue-green: rgba(48, 176, 199, 0.2);
+	--color-poll-opacity-light-blue: rgba(50, 173, 230, 0.2);
+	--color-poll-opacity-blue: rgba(0, 91, 255, 0.2);
+	--color-poll-opacity-purple: rgba(88, 86, 214, 0.2);
+	--color-poll-opacity-purple-light: rgba(175, 82, 222, 0.2);
+	--color-poll-opacity-pink: rgba(255, 45, 85, 0.2);
+	--color-poll-opacity-brown: rgba(162, 132, 94, 0.2);
+	--color-poll-opacity-black: rgba(1, 1, 1, 0.2);
+	--color-base-light-black: #5a5a5a;
+	--color-shadow: rgba(47, 47, 47, 0.75);
+    --font-family: "Inter", sans-serif;
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-base-main: #121212;
+		--color-base-main-black: #f5f5f5;
+		--color-base-light-gray: #2a2a2a;
+		--color-base-gray: #3a3a3a;
+		--color-base-dark-gray: #8a8a8a;
+		--color-base-light-black: #cfcfcf;
+		--color-poll-red: #ff453a;
+		--color-poll-orange: #ff9f0a;
+		--color-poll-yellow: #ffd60a;
+		--color-poll-green: #30d158;
+		--color-poll-light-green: #66d4cf;
+		--color-poll-blue-green: #40c8e0;
+		--color-poll-light-blue: #64d2ff;
+		--color-poll-blue: #0a84ff;
+		--color-poll-purple: #5e5ce6;
+		--color-poll-purple-light: #bf5af2;
+		--color-poll-pink: #ff375f;
+		--color-poll-brown: #ac8e68;
+		--color-poll-black: #ffffff;
+		--color-base-start-warning-bg: #4a4300;
+		--color-base-end-warning-bg: #5a5200;
+		--color-base-warning-elems: #ffe66d;
+		--color-poll-opacity-red: rgba(255, 69, 58, 0.2);
+		--color-poll-opacity-orange: rgba(255, 159, 10, 0.2);
+		--color-poll-opacity-yellow: rgba(255, 214, 10, 0.2);
+		--color-poll-opacity-green: rgba(48, 209, 88, 0.2);
+		--color-poll-opacity-light-green: rgba(102, 212, 207, 0.2);
+		--color-poll-opacity-blue-green: rgba(64, 200, 224, 0.2);
+		--color-poll-opacity-light-blue: rgba(100, 210, 255, 0.2);
+		--color-poll-opacity-blue: rgba(10, 132, 255, 0.2);
+		--color-poll-opacity-purple: rgba(94, 92, 230, 0.2);
+		--color-poll-opacity-purple-light: rgba(191, 90, 242, 0.2);
+		--color-poll-opacity-pink: rgba(255, 55, 95, 0.2);
+		--color-poll-opacity-brown: rgba(172, 142, 104, 0.2);
+		--color-poll-opacity-black: rgba(255, 255, 255, 0.2);
+		--color-shadow: rgba(208, 208, 208, 0.75);
+		--font-family: "Inter", sans-serif;
+	}
+}
+	*/
+
+a {
+  text-decoration: none;  
+}
+
+a:hover,a:active {
+  text-decoration: underline;  
+}
