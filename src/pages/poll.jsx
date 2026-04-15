@@ -40,12 +40,13 @@ const Poll = () => {
 
     const ownerExplorer = `${networks.find(({ id }) => id === chainId).blockExplorers.default.url}/address/${poll?.address}`
 
-    const cert = Redstone.useCertificate(`counter-${poll?.id}`, { load: !!poll?.id })
+    const cert = Redstone.useCertificate(`counter-${poll?.id}`, { load: !!poll?.id, paymentAddress: poll?.address || '' })
         , commission = Redstone.useCommission()
 
     const stopPoll = Redstone.useNote(`stop-poll-${poll?.id}`, {
         self: true, 
         selfRead: true, 
+        address: poll?.address, 
         once: true,
         cache: 60 * 1000 * 10,
         load: !!poll?.id
@@ -56,6 +57,7 @@ const Poll = () => {
             Redstone.useCounter(`counter-${poll?.id}`, { 
                 copyId, 
                 stas: poll?.isPay, 
+                paymentAddress: poll?.address || '',
                 once: poll?.isUnique,
                 cache: 60 * 1000 * 10,
                 interval: 60 * 1000 * 10,

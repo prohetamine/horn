@@ -20,7 +20,7 @@ const config = {
     icons: ['https://horn.prohetamine.ru/icon.svg']
   },
   projectId: '1febfd92481d4ea997711d2ac4a363c0',
-  host: '/horn-testnet/'
+  host: '/horn-testnet-0/'
 }
 
 createRoot(document.getElementById('root')).render(
@@ -28,7 +28,7 @@ createRoot(document.getElementById('root')).render(
     <LanguageProvider>
       <RedstoneProvider config={config}>
         <StasPayProvider>
-          <BrowserRouter basename="/">
+          <BrowserRouter basename='/'>
             <Routes>
               <Route path='/' element={<App />}>
                 <Route index element={<Home />} />

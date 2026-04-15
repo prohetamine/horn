@@ -21,8 +21,11 @@ const Cert = () => {
     const { dataBase64 } = useParams()
         , [id, stasCount, isOneNetwork] = decode(dataBase64)
         
-    const { switchNetwork, networks, chainId, isConnected } = Redstone.useApp()    
-        , cert = Redstone.useCertificate(`counter-${id}`, { load: !!id })
+    const { switchNetwork, networks, chainId, isConnected, address } = Redstone.useApp()    
+        , cert = Redstone.useCertificate(`counter-${id}`, { 
+            load: !!id && !!address,
+            paymentAddress: address || '',
+        })
         , confirm = useStasPay()
 
     const handleCert = async () => {
