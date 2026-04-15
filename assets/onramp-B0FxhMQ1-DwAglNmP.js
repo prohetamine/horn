@@ -1,4 +1,4 @@
-import{c as w,P as c,t as q,y as m,_ as l,e as L,j as E,g as U,Z as D,C as A,v as K,f as V,U as _,Q as k,p as j,a as B,q as $,k as I,J as u,n as p,O as F,o as b}from"./index-C1EJvMd1.js";const N=I`
+import{c as w,H as c,n as q,y as m,_ as l,X as L,W as E,f as U,b as S,C as A,v as K,e as N,U as V,N as k,T as j,a as B,q as $,k as I,J as u,P as p,G as X,o as b}from"./index-BClGTh2N.js";const _=I`
   :host > wui-grid {
     max-height: 360px;
     overflow: auto;
@@ -38,7 +38,7 @@ import{c as w,P as c,t as q,y as m,_ as l,e as L,j as E,g as U,Z as D,C as A,v a
         >
           <wui-text variant="md-medium" color="primary">${t.id}</wui-text>
         </wui-list-item>
-      `})}selectCurrency(e){e&&(c.setPaymentCurrency(e),$.close())}};C.styles=N;O([u()],C.prototype,"selectedCurrency",void 0);O([u()],C.prototype,"currencies",void 0);O([u()],C.prototype,"currencyImages",void 0);O([u()],C.prototype,"checked",void 0);C=O([b("w3m-onramp-fiat-select-view")],C);const Q=I`
+      `})}selectCurrency(e){e&&(c.setPaymentCurrency(e),$.close())}};C.styles=_;O([u()],C.prototype,"selectedCurrency",void 0);O([u()],C.prototype,"currencies",void 0);O([u()],C.prototype,"currencyImages",void 0);O([u()],C.prototype,"checked",void 0);C=O([b("w3m-onramp-fiat-select-view")],C);const F=I`
   button {
     padding: ${({spacing:e})=>e[3]};
     border-radius: ${({borderRadius:e})=>e[4]};
@@ -112,11 +112,11 @@ import{c as w,P as c,t as q,y as m,_ as l,e as L,j as E,g as U,Z as D,C as A,v a
       <wui-flex class="networks">
         ${i?.map(n=>l`
             <wui-flex class="network-icon">
-              <wui-image src=${m(F.getNetworkImage(n))}></wui-image>
+              <wui-image src=${m(X.getNetworkImage(n))}></wui-image>
             </wui-flex>
           `)}
       </wui-flex>
-    `}};h.styles=[Q];v([p({type:Boolean})],h.prototype,"disabled",void 0);v([p()],h.prototype,"color",void 0);v([p()],h.prototype,"name",void 0);v([p()],h.prototype,"label",void 0);v([p()],h.prototype,"feeRange",void 0);v([p({type:Boolean})],h.prototype,"loading",void 0);v([p()],h.prototype,"onClick",void 0);h=v([b("w3m-onramp-provider-item")],h);var z=function(e,t,i,n){var o=arguments.length,r=o<3?t:n,s;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")r=Reflect.decorate(e,t,i,n);else for(var a=e.length-1;a>=0;a--)(s=e[a])&&(r=(o<3?s(r):o>3?s(t,i,r):s(t,i))||r);return o>3&&r&&Object.defineProperty(t,i,r),r};let S=class extends w{constructor(){super(),this.unsubscribe=[],this.providers=c.state.providers,this.unsubscribe.push(c.subscribeKey("providers",e=>{this.providers=e}))}render(){return l`
+    `}};h.styles=[F];v([p({type:Boolean})],h.prototype,"disabled",void 0);v([p()],h.prototype,"color",void 0);v([p()],h.prototype,"name",void 0);v([p()],h.prototype,"label",void 0);v([p()],h.prototype,"feeRange",void 0);v([p({type:Boolean})],h.prototype,"loading",void 0);v([p()],h.prototype,"onClick",void 0);h=v([b("w3m-onramp-provider-item")],h);var z=function(e,t,i,n){var o=arguments.length,r=o<3?t:n,s;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")r=Reflect.decorate(e,t,i,n);else for(var a=e.length-1;a>=0;a--)(s=e[a])&&(r=(o<3?s(r):o>3?s(t,i,r):s(t,i))||r);return o>3&&r&&Object.defineProperty(t,i,r),r};let W=class extends w{constructor(){super(),this.unsubscribe=[],this.providers=c.state.providers,this.unsubscribe.push(c.subscribeKey("providers",e=>{this.providers=e}))}render(){return l`
       <wui-flex flexDirection="column" .padding=${["0","3","3","3"]} gap="2">
         ${this.onRampProvidersTemplate()}
       </wui-flex>
@@ -129,7 +129,7 @@ import{c as w,P as c,t as q,y as m,_ as l,e as L,j as E,g as U,Z as D,C as A,v a
             ?disabled=${!e.url}
             data-testid=${`onramp-provider-${e.name}`}
           ></w3m-onramp-provider-item>
-        `)}onClickProvider(e){var t;c.setSelectedProvider(e),D.push("BuyInProgress"),L.openHref(((t=c.state.selectedProvider)==null?void 0:t.url)||e.url,"popupWindow","width=600,height=800,scrollbars=yes"),K.sendEvent({type:"track",event:"SELECT_BUY_PROVIDER",properties:{provider:e.name,isSmartAccount:V(A.state.activeChain)===_.ACCOUNT_TYPES.SMART_ACCOUNT}})}};z([u()],S.prototype,"providers",void 0);S=z([b("w3m-onramp-providers-view")],S);const X=I`
+        `)}onClickProvider(e){var t;c.setSelectedProvider(e),S.push("BuyInProgress"),L.openHref(((t=c.state.selectedProvider)==null?void 0:t.url)||e.url,"popupWindow","width=600,height=800,scrollbars=yes"),K.sendEvent({type:"track",event:"SELECT_BUY_PROVIDER",properties:{provider:e.name,isSmartAccount:N(A.state.activeChain)===V.ACCOUNT_TYPES.SMART_ACCOUNT}})}};z([u()],W.prototype,"providers",void 0);W=z([b("w3m-onramp-providers-view")],W);const Q=I`
   :host > wui-grid {
     max-height: 360px;
     overflow: auto;
@@ -172,7 +172,7 @@ import{c as w,P as c,t as q,y as m,_ as l,e as L,j as E,g as U,Z as D,C as A,v a
             <wui-text variant="sm-regular" color="secondary">${t.symbol}</wui-text>
           </wui-flex>
         </wui-list-item>
-      `})}selectToken(e){e&&(c.setPurchaseCurrency(e),$.close())}};R.styles=X;T([u()],R.prototype,"selectedCurrency",void 0);T([u()],R.prototype,"tokens",void 0);T([u()],R.prototype,"tokenImages",void 0);T([u()],R.prototype,"checked",void 0);R=T([b("w3m-onramp-token-select-view")],R);const M=I`
+      `})}selectToken(e){e&&(c.setPurchaseCurrency(e),$.close())}};R.styles=Q;T([u()],R.prototype,"selectedCurrency",void 0);T([u()],R.prototype,"tokens",void 0);T([u()],R.prototype,"tokenImages",void 0);T([u()],R.prototype,"checked",void 0);R=T([b("w3m-onramp-token-select-view")],R);const M=I`
   @keyframes shake {
     0% {
       transform: translateX(0);
@@ -298,7 +298,7 @@ import{c as w,P as c,t as q,y as m,_ as l,e as L,j as E,g as U,Z as D,C as A,v a
     `}onTryAgain(){this.selectedOnRampProvider&&(this.error=!1,L.openHref(this.selectedOnRampProvider.url,"popupWindow","width=600,height=800,scrollbars=yes"))}tryAgainTemplate(){var e;return(e=this.selectedOnRampProvider)!=null&&e.url?l`<wui-button size="md" variant="accent" @click=${this.onTryAgain.bind(this)}>
       <wui-icon color="inherit" slot="iconLeft" name="refresh"></wui-icon>
       Try again
-    </wui-button>`:null}loaderTemplate(){const e=E.state.themeVariables["--w3m-border-radius-master"],t=e?parseInt(e.replace("px",""),10):4;return l`<wui-loading-thumbnail radius=${t*9}></wui-loading-thumbnail>`}onCopyUri(){var e;if(!((e=this.selectedOnRampProvider)!=null&&e.url)){U.showError("No link found"),D.goBack();return}try{L.copyToClopboard(this.selectedOnRampProvider.url),U.showSuccess("Link copied")}catch{U.showError("Failed to copy")}}};d.styles=M;g([u()],d.prototype,"intervalId",void 0);g([u()],d.prototype,"selectedOnRampProvider",void 0);g([u()],d.prototype,"uri",void 0);g([u()],d.prototype,"ready",void 0);g([u()],d.prototype,"showRetry",void 0);g([u()],d.prototype,"buffering",void 0);g([u()],d.prototype,"error",void 0);g([p({type:Boolean})],d.prototype,"isMobile",void 0);g([p()],d.prototype,"onRetry",void 0);d=g([b("w3m-buy-in-progress-view")],d);var Y=function(e,t,i,n){var o=arguments.length,r=o<3?t:n===null?n=Object.getOwnPropertyDescriptor(t,i):n,s;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")r=Reflect.decorate(e,t,i,n);else for(var a=e.length-1;a>=0;a--)(s=e[a])&&(r=(o<3?s(r):o>3?s(t,i,r):s(t,i))||r);return o>3&&r&&Object.defineProperty(t,i,r),r};let W=class extends w{render(){return l`
+    </wui-button>`:null}loaderTemplate(){const e=E.state.themeVariables["--w3m-border-radius-master"],t=e?parseInt(e.replace("px",""),10):4;return l`<wui-loading-thumbnail radius=${t*9}></wui-loading-thumbnail>`}onCopyUri(){var e;if(!((e=this.selectedOnRampProvider)!=null&&e.url)){U.showError("No link found"),S.goBack();return}try{L.copyToClopboard(this.selectedOnRampProvider.url),U.showSuccess("Link copied")}catch{U.showError("Failed to copy")}}};d.styles=M;g([u()],d.prototype,"intervalId",void 0);g([u()],d.prototype,"selectedOnRampProvider",void 0);g([u()],d.prototype,"uri",void 0);g([u()],d.prototype,"ready",void 0);g([u()],d.prototype,"showRetry",void 0);g([u()],d.prototype,"buffering",void 0);g([u()],d.prototype,"error",void 0);g([p({type:Boolean})],d.prototype,"isMobile",void 0);g([p()],d.prototype,"onRetry",void 0);d=g([b("w3m-buy-in-progress-view")],d);var Y=function(e,t,i,n){var o=arguments.length,r=o<3?t:n===null?n=Object.getOwnPropertyDescriptor(t,i):n,s;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")r=Reflect.decorate(e,t,i,n);else for(var a=e.length-1;a>=0;a--)(s=e[a])&&(r=(o<3?s(r):o>3?s(t,i,r):s(t,i))||r);return o>3&&r&&Object.defineProperty(t,i,r),r};let D=class extends w{render(){return l`
       <wui-flex
         flexDirection="column"
         .padding=${["6","10","5","10"]}
@@ -315,12 +315,12 @@ import{c as w,P as c,t as q,y as m,_ as l,e as L,j as E,g as U,Z as D,C as A,v a
             using your credit card or bank transfer
           </wui-text>
         </wui-flex>
-        <wui-button @click=${D.goBack}>
+        <wui-button @click=${S.goBack}>
           <wui-icon size="sm" color="inherit" name="add" slot="iconLeft"></wui-icon>
           Buy
         </wui-button>
       </wui-flex>
-    `}};W=Y([b("w3m-what-is-a-buy-view")],W);const G=I`
+    `}};D=Y([b("w3m-what-is-a-buy-view")],D);const G=I`
   :host {
     width: 100%;
   }
@@ -419,4 +419,4 @@ import{c as w,P as c,t as q,y as m,_ as l,e as L,j as E,g as U,Z as D,C as A,v a
           borderRadius="xs"
         >
           Connect wallet
-        </wui-button>`}getQuotes(){this.loading||$.open({view:"OnRampProviders"})}openModal(){$.open({view:"Connect"})}async onPaymentAmountChange(e){c.setPaymentAmount(Number(e.detail)),await c.getQuote()}async selectPresetAmount(e){c.setPaymentAmount(e),await c.getQuote()}};y.styles=H;x([p({type:Boolean})],y.prototype,"disabled",void 0);x([u()],y.prototype,"caipAddress",void 0);x([u()],y.prototype,"loading",void 0);x([u()],y.prototype,"paymentCurrency",void 0);x([u()],y.prototype,"paymentAmount",void 0);x([u()],y.prototype,"purchaseAmount",void 0);x([u()],y.prototype,"quoteLoading",void 0);y=x([b("w3m-onramp-widget")],y);export{d as W3mBuyInProgressView,S as W3mOnRampProvidersView,C as W3mOnrampFiatSelectView,R as W3mOnrampTokensView,y as W3mOnrampWidget,W as W3mWhatIsABuyView};
+        </wui-button>`}getQuotes(){this.loading||$.open({view:"OnRampProviders"})}openModal(){$.open({view:"Connect"})}async onPaymentAmountChange(e){c.setPaymentAmount(Number(e.detail)),await c.getQuote()}async selectPresetAmount(e){c.setPaymentAmount(e),await c.getQuote()}};y.styles=H;x([p({type:Boolean})],y.prototype,"disabled",void 0);x([u()],y.prototype,"caipAddress",void 0);x([u()],y.prototype,"loading",void 0);x([u()],y.prototype,"paymentCurrency",void 0);x([u()],y.prototype,"paymentAmount",void 0);x([u()],y.prototype,"purchaseAmount",void 0);x([u()],y.prototype,"quoteLoading",void 0);y=x([b("w3m-onramp-widget")],y);export{d as W3mBuyInProgressView,W as W3mOnRampProvidersView,C as W3mOnrampFiatSelectView,R as W3mOnrampTokensView,y as W3mOnrampWidget,D as W3mWhatIsABuyView};

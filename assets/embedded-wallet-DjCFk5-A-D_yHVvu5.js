@@ -1,4 +1,4 @@
-import{c as f,q as j,a as L,_ as c,Y as T,j as V,G as H,e as P,u as q,Z as G,b as X,L as x,C as h,R as N,d as J,H as z,v as _,f as S,U as g,g as Q,h as M,t as Z,i as ee,W as O,z as W,J as l,k as E,l as D,m as F,n as d,y as te,o as w}from"./index-C1EJvMd1.js";const oe=W`
+import{c as f,q as j,a as L,_ as c,Y as T,W as M,Z as H,X as z,u as q,b as G,d as X,M as x,C as h,O as N,l as Z,z as I,v as O,e as S,U as g,f as J,g as V,n as Q,h as ee,i as _,j as W,J as d,k as E,m as D,L as F,P as l,y as te,o as w}from"./index-BClGTh2N.js";const oe=W`
   div {
     width: 100%;
   }
@@ -12,7 +12,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,j as V,G as H,e as P,u as q,Z as G,b a
       transform: translateY(-50px);
     }
   }
-`;var K=function(e,t,i,s){var r=arguments.length,o=r<3?t:s,n;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(e,t,i,s);else for(var a=e.length-1;a>=0;a--)(n=e[a])&&(o=(r<3?n(o):r>3?n(t,i,o):n(t,i))||o);return r>3&&o&&Object.defineProperty(t,i,o),o};const I=600,Y=360,ie=64;let C=class extends f{constructor(){super(),this.bodyObserver=void 0,this.unsubscribe=[],this.iframe=document.getElementById("w3m-iframe"),this.ready=!1,this.unsubscribe.push(j.subscribeKey("open",e=>{e||this.onHideIframe()}),j.subscribeKey("shake",e=>{e?this.iframe.style.animation="w3m-shake 500ms var(--apkt-easings-ease-out-power-2)":this.iframe.style.animation="none"}))}disconnectedCallback(){var e;this.onHideIframe(),this.unsubscribe.forEach(t=>t()),(e=this.bodyObserver)==null||e.unobserve(window.document.body)}async firstUpdated(){var e;await this.syncTheme(),this.iframe.style.display="block";const t=(e=this==null?void 0:this.renderRoot)==null?void 0:e.querySelector("div");this.bodyObserver=new ResizeObserver(i=>{var s,r;const o=(s=i?.[0])==null?void 0:s.contentBoxSize,n=(r=o?.[0])==null?void 0:r.inlineSize;this.iframe.style.height=`${I}px`,t.style.height=`${I}px`,L.state.enableEmbedded?this.updateFrameSizeForEmbeddedMode():n&&n<=430?(this.iframe.style.width="100%",this.iframe.style.left="0px",this.iframe.style.bottom="0px",this.iframe.style.top="unset",this.onShowIframe()):(this.iframe.style.width=`${Y}px`,this.iframe.style.left=`calc(50% - ${Y/2}px)`,this.iframe.style.top=`calc(50% - ${I/2}px + ${ie/2}px)`,this.iframe.style.bottom="unset",this.onShowIframe())}),this.bodyObserver.observe(window.document.body)}render(){return c`<div data-ready=${this.ready} id="w3m-frame-container"></div>`}onShowIframe(){const e=window.innerWidth<=430;this.ready=!0,this.iframe.style.animation=e?"w3m-iframe-zoom-in-mobile 200ms var(--apkt-easings-ease-out-power-2)":"w3m-iframe-zoom-in 200ms var(--apkt-easings-ease-out-power-2)"}onHideIframe(){this.iframe.style.display="none",this.iframe.style.animation="w3m-iframe-fade-out 200ms var(--apkt-easings-ease-out-power-2)"}async syncTheme(){const e=T.getAuthConnector();if(e){const t=V.getSnapshot().themeMode,i=V.getSnapshot().themeVariables;await e.provider.syncTheme({themeVariables:i,w3mThemeVariables:H(i,t)})}}async updateFrameSizeForEmbeddedMode(){var e;const t=(e=this==null?void 0:this.renderRoot)==null?void 0:e.querySelector("div");await new Promise(s=>{setTimeout(s,300)});const i=this.getBoundingClientRect();t.style.width="100%",this.iframe.style.left=`${i.left}px`,this.iframe.style.top=`${i.top}px`,this.iframe.style.width=`${i.width}px`,this.iframe.style.height=`${i.height}px`,this.onShowIframe()}};C.styles=oe;K([l()],C.prototype,"ready",void 0);C=K([w("w3m-approve-transaction-view")],C);const re=E`
+`;var K=function(e,t,i,s){var r=arguments.length,o=r<3?t:s,n;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(e,t,i,s);else for(var a=e.length-1;a>=0;a--)(n=e[a])&&(o=(r<3?n(o):r>3?n(t,i,o):n(t,i))||o);return r>3&&o&&Object.defineProperty(t,i,o),o};const P=600,Y=360,ie=64;let C=class extends f{constructor(){super(),this.bodyObserver=void 0,this.unsubscribe=[],this.iframe=document.getElementById("w3m-iframe"),this.ready=!1,this.unsubscribe.push(j.subscribeKey("open",e=>{e||this.onHideIframe()}),j.subscribeKey("shake",e=>{e?this.iframe.style.animation="w3m-shake 500ms var(--apkt-easings-ease-out-power-2)":this.iframe.style.animation="none"}))}disconnectedCallback(){var e;this.onHideIframe(),this.unsubscribe.forEach(t=>t()),(e=this.bodyObserver)==null||e.unobserve(window.document.body)}async firstUpdated(){var e;await this.syncTheme(),this.iframe.style.display="block";const t=(e=this==null?void 0:this.renderRoot)==null?void 0:e.querySelector("div");this.bodyObserver=new ResizeObserver(i=>{var s,r;const o=(s=i?.[0])==null?void 0:s.contentBoxSize,n=(r=o?.[0])==null?void 0:r.inlineSize;this.iframe.style.height=`${P}px`,t.style.height=`${P}px`,L.state.enableEmbedded?this.updateFrameSizeForEmbeddedMode():n&&n<=430?(this.iframe.style.width="100%",this.iframe.style.left="0px",this.iframe.style.bottom="0px",this.iframe.style.top="unset",this.onShowIframe()):(this.iframe.style.width=`${Y}px`,this.iframe.style.left=`calc(50% - ${Y/2}px)`,this.iframe.style.top=`calc(50% - ${P/2}px + ${ie/2}px)`,this.iframe.style.bottom="unset",this.onShowIframe())}),this.bodyObserver.observe(window.document.body)}render(){return c`<div data-ready=${this.ready} id="w3m-frame-container"></div>`}onShowIframe(){const e=window.innerWidth<=430;this.ready=!0,this.iframe.style.animation=e?"w3m-iframe-zoom-in-mobile 200ms var(--apkt-easings-ease-out-power-2)":"w3m-iframe-zoom-in 200ms var(--apkt-easings-ease-out-power-2)"}onHideIframe(){this.iframe.style.display="none",this.iframe.style.animation="w3m-iframe-fade-out 200ms var(--apkt-easings-ease-out-power-2)"}async syncTheme(){const e=T.getAuthConnector();if(e){const t=M.getSnapshot().themeMode,i=M.getSnapshot().themeVariables;await e.provider.syncTheme({themeVariables:i,w3mThemeVariables:H(i,t)})}}async updateFrameSizeForEmbeddedMode(){var e;const t=(e=this==null?void 0:this.renderRoot)==null?void 0:e.querySelector("div");await new Promise(s=>{setTimeout(s,300)});const i=this.getBoundingClientRect();t.style.width="100%",this.iframe.style.left=`${i.left}px`,this.iframe.style.top=`${i.top}px`,this.iframe.style.width=`${i.width}px`,this.iframe.style.height=`${i.height}px`,this.onShowIframe()}};C.styles=oe;K([d()],C.prototype,"ready",void 0);C=K([w("w3m-approve-transaction-view")],C);const re=E`
   a {
     border: none;
     border-radius: ${({borderRadius:e})=>e[20]};
@@ -149,15 +149,15 @@ import{c as f,q as j,a as L,_ as c,Y as T,j as V,G as H,e as P,u as q,Z as G,b a
       color="inherit"
       size="inherit"
       class="image-icon"
-    ></wui-icon>`}};u.styles=[D,F,re];y([d()],u.prototype,"type",void 0);y([d()],u.prototype,"size",void 0);y([d()],u.prototype,"imageSrc",void 0);y([d({type:Boolean})],u.prototype,"disabled",void 0);y([d()],u.prototype,"href",void 0);y([d()],u.prototype,"text",void 0);u=y([w("wui-semantic-chip")],u);var ae=function(e,t,i,s){var r=arguments.length,o=r<3?t:s===null?s=Object.getOwnPropertyDescriptor(t,i):s,n;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(e,t,i,s);else for(var a=e.length-1;a>=0;a--)(n=e[a])&&(o=(r<3?n(o):r>3?n(t,i,o):n(t,i))||o);return r>3&&o&&Object.defineProperty(t,i,o),o};let B=class extends f{render(){return c`
+    ></wui-icon>`}};u.styles=[D,F,re];y([l()],u.prototype,"type",void 0);y([l()],u.prototype,"size",void 0);y([l()],u.prototype,"imageSrc",void 0);y([l({type:Boolean})],u.prototype,"disabled",void 0);y([l()],u.prototype,"href",void 0);y([l()],u.prototype,"text",void 0);u=y([w("wui-semantic-chip")],u);var ae=function(e,t,i,s){var r=arguments.length,o=r<3?t:s===null?s=Object.getOwnPropertyDescriptor(t,i):s,n;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(e,t,i,s);else for(var a=e.length-1;a>=0;a--)(n=e[a])&&(o=(r<3?n(o):r>3?n(t,i,o):n(t,i))||o);return r>3&&o&&Object.defineProperty(t,i,o),o};let B=class extends f{render(){return c`
       <wui-flex flexDirection="column" alignItems="center" gap="5" padding="5">
         <wui-text variant="md-regular" color="primary">Follow the instructions on</wui-text>
         <wui-semantic-chip
           icon="externalLink"
           variant="fill"
-          text=${O.SECURE_SITE_DASHBOARD}
-          href=${O.SECURE_SITE_DASHBOARD}
-          imageSrc=${O.SECURE_SITE_FAVICON}
+          text=${_.SECURE_SITE_DASHBOARD}
+          href=${_.SECURE_SITE_DASHBOARD}
+          imageSrc=${_.SECURE_SITE_FAVICON}
           data-testid="w3m-secure-website-button"
         >
         </wui-semantic-chip>
@@ -183,7 +183,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,j as V,G as H,e as P,u as q,Z as G,b a
           >
         </wui-list-item>
       </w3m-tooltip-trigger>
-    `}isV6(){return(M.get("dapp_smart_account_version")||"v6")==="v6"}toggleSmartAccountVersion(){var e;M.set("dapp_smart_account_version",this.isV6()?"v7":"v6"),typeof window<"u"&&((e=window?.location)==null||e.reload())}togglePreferredAccountTypeTemplate(){var e;const t=(e=this.network)==null?void 0:e.chainNamespace,i=h.checkIfSmartAccountEnabled(),s=T.getConnectorId(t);return!T.getAuthConnector()||s!==z.CONNECTOR_ID.AUTH||!i?null:(this.switched||(this.text=S(t)===g.ACCOUNT_TYPES.SMART_ACCOUNT?"Switch to your EOA":"Switch to your Smart Account"),c`
+    `}isV6(){return(V.get("dapp_smart_account_version")||"v6")==="v6"}toggleSmartAccountVersion(){var e;V.set("dapp_smart_account_version",this.isV6()?"v7":"v6"),typeof window<"u"&&((e=window?.location)==null||e.reload())}togglePreferredAccountTypeTemplate(){var e;const t=(e=this.network)==null?void 0:e.chainNamespace,i=h.checkIfSmartAccountEnabled(),s=T.getConnectorId(t);return!T.getAuthConnector()||s!==I.CONNECTOR_ID.AUTH||!i?null:(this.switched||(this.text=S(t)===g.ACCOUNT_TYPES.SMART_ACCOUNT?"Switch to your EOA":"Switch to your Smart Account"),c`
       <wui-list-item
         icon="swapHorizontal"
         ?rounded=${!0}
@@ -194,7 +194,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,j as V,G as H,e as P,u as q,Z as G,b a
       >
         <wui-text variant="lg-regular" color="primary">${this.text}</wui-text>
       </wui-list-item>
-    `)}async changePreferredAccountType(){var e;const t=(e=this.network)==null?void 0:e.chainNamespace,i=h.checkIfSmartAccountEnabled(),s=S(t)===g.ACCOUNT_TYPES.SMART_ACCOUNT||!i?g.ACCOUNT_TYPES.EOA:g.ACCOUNT_TYPES.SMART_ACCOUNT;T.getAuthConnector()&&(this.loading=!0,await Z.setPreferredAccountType(s,t),this.text=s===g.ACCOUNT_TYPES.SMART_ACCOUNT?"Switch to your EOA":"Switch to your Smart Account",this.switched=!0,ee.resetSend(),this.loading=!1,this.requestUpdate())}};A([l()],$.prototype,"loading",void 0);A([l()],$.prototype,"switched",void 0);A([l()],$.prototype,"text",void 0);A([l()],$.prototype,"network",void 0);$=A([w("w3m-smart-account-settings-view")],$);const ce=E`
+    `)}async changePreferredAccountType(){var e;const t=(e=this.network)==null?void 0:e.chainNamespace,i=h.checkIfSmartAccountEnabled(),s=S(t)===g.ACCOUNT_TYPES.SMART_ACCOUNT||!i?g.ACCOUNT_TYPES.EOA:g.ACCOUNT_TYPES.SMART_ACCOUNT;T.getAuthConnector()&&(this.loading=!0,await Q.setPreferredAccountType(s,t),this.text=s===g.ACCOUNT_TYPES.SMART_ACCOUNT?"Switch to your EOA":"Switch to your Smart Account",this.switched=!0,ee.resetSend(),this.loading=!1,this.requestUpdate())}};A([d()],$.prototype,"loading",void 0);A([d()],$.prototype,"switched",void 0);A([d()],$.prototype,"text",void 0);A([d()],$.prototype,"network",void 0);$=A([w("w3m-smart-account-settings-view")],$);const ce=E`
   :host {
     width: 100%;
   }
@@ -238,7 +238,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,j as V,G as H,e as P,u as q,Z as G,b a
         <wui-text class="name" color="primary" variant="md-regular">${this.name}</wui-text>
         ${this.templateRightContent()}
       </button>
-    `}templateRightContent(){return this.loading?c`<wui-loading-spinner size="lg" color="primary"></wui-loading-spinner>`:this.registered?c`<wui-tag variant="info" size="sm">Registered</wui-tag>`:c`<wui-tag variant="success" size="sm">Available</wui-tag>`}};b.styles=[D,F,ce];R([d()],b.prototype,"name",void 0);R([d({type:Boolean})],b.prototype,"registered",void 0);R([d({type:Boolean})],b.prototype,"loading",void 0);R([d({type:Boolean})],b.prototype,"disabled",void 0);b=R([w("wui-account-name-suggestion-item")],b);const de=E`
+    `}templateRightContent(){return this.loading?c`<wui-loading-spinner size="lg" color="primary"></wui-loading-spinner>`:this.registered?c`<wui-tag variant="info" size="sm">Registered</wui-tag>`:c`<wui-tag variant="success" size="sm">Available</wui-tag>`}};b.styles=[D,F,ce];R([l()],b.prototype,"name",void 0);R([l({type:Boolean})],b.prototype,"registered",void 0);R([l({type:Boolean})],b.prototype,"loading",void 0);R([l({type:Boolean})],b.prototype,"disabled",void 0);b=R([w("wui-account-name-suggestion-item")],b);const le=E`
   :host {
     position: relative;
     width: 100%;
@@ -270,7 +270,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,j as V,G as H,e as P,u as q,Z as G,b a
         inputRightPadding="5xl"
         .onKeyDown=${this.onKeyDown}
       ></wui-input-text>
-    `}};m.styles=[D,de];k([d()],m.prototype,"errorMessage",void 0);k([d({type:Boolean})],m.prototype,"disabled",void 0);k([d()],m.prototype,"value",void 0);k([d({type:Boolean})],m.prototype,"loading",void 0);k([d({attribute:!1})],m.prototype,"onKeyDown",void 0);m=k([w("wui-ens-input")],m);const le=E`
+    `}};m.styles=[D,le];k([l()],m.prototype,"errorMessage",void 0);k([l({type:Boolean})],m.prototype,"disabled",void 0);k([l()],m.prototype,"value",void 0);k([l({type:Boolean})],m.prototype,"loading",void 0);k([l({attribute:!1})],m.prototype,"onKeyDown",void 0);m=k([w("wui-ens-input")],m);const de=E`
   wui-flex {
     width: 100%;
   }
@@ -321,14 +321,14 @@ import{c as f,q as j,a as L,_ as c,Y as T,j as V,G as H,e as P,u as q,Z as G,b a
     transform: translateY(-50%);
     right: 10px;
   }
-`;var v=function(e,t,i,s){var r=arguments.length,o=r<3?t:s,n;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(e,t,i,s);else for(var a=e.length-1;a>=0;a--)(n=e[a])&&(o=(r<3?n(o):r>3?n(t,i,o):n(t,i))||o);return r>3&&o&&Object.defineProperty(t,i,o),o};let p=class extends f{constructor(){var e;super(),this.formRef=X(),this.usubscribe=[],this.name="",this.error="",this.loading=x.state.loading,this.suggestions=x.state.suggestions,this.profileName=(e=h.getAccountData())==null?void 0:e.profileName,this.onDebouncedNameInputChange=P.debounce(t=>{t.length<4?this.error="Name must be at least 4 characters long":N.isValidReownName(t)?(this.error="",x.getSuggestions(t)):this.error="The value is not a valid username"}),this.usubscribe.push(x.subscribe(t=>{this.suggestions=t.suggestions,this.loading=t.loading}),h.subscribeChainProp("accountState",t=>{this.profileName=t?.profileName,t!=null&&t.profileName&&(this.error="You already own a name")}))}firstUpdated(){var e;(e=this.formRef.value)==null||e.addEventListener("keydown",this.onEnterKey.bind(this))}disconnectedCallback(){var e;super.disconnectedCallback(),this.usubscribe.forEach(t=>t()),(e=this.formRef.value)==null||e.removeEventListener("keydown",this.onEnterKey.bind(this))}render(){return c`
+`;var v=function(e,t,i,s){var r=arguments.length,o=r<3?t:s,n;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(e,t,i,s);else for(var a=e.length-1;a>=0;a--)(n=e[a])&&(o=(r<3?n(o):r>3?n(t,i,o):n(t,i))||o);return r>3&&o&&Object.defineProperty(t,i,o),o};let p=class extends f{constructor(){var e;super(),this.formRef=X(),this.usubscribe=[],this.name="",this.error="",this.loading=x.state.loading,this.suggestions=x.state.suggestions,this.profileName=(e=h.getAccountData())==null?void 0:e.profileName,this.onDebouncedNameInputChange=z.debounce(t=>{t.length<4?this.error="Name must be at least 4 characters long":N.isValidReownName(t)?(this.error="",x.getSuggestions(t)):this.error="The value is not a valid username"}),this.usubscribe.push(x.subscribe(t=>{this.suggestions=t.suggestions,this.loading=t.loading}),h.subscribeChainProp("accountState",t=>{this.profileName=t?.profileName,t!=null&&t.profileName&&(this.error="You already own a name")}))}firstUpdated(){var e;(e=this.formRef.value)==null||e.addEventListener("keydown",this.onEnterKey.bind(this))}disconnectedCallback(){var e;super.disconnectedCallback(),this.usubscribe.forEach(t=>t()),(e=this.formRef.value)==null||e.removeEventListener("keydown",this.onEnterKey.bind(this))}render(){return c`
       <wui-flex
         flexDirection="column"
         alignItems="center"
         gap="4"
         .padding=${["1","3","4","3"]}
       >
-        <form ${J(this.formRef)} @submit=${this.onSubmitName.bind(this)}>
+        <form ${Z(this.formRef)} @submit=${this.onSubmitName.bind(this)}>
           <wui-ens-input
             @inputChange=${this.onNameInputChange.bind(this)}
             .errorMessage=${this.error}
@@ -344,7 +344,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,j as V,G as H,e as P,u as q,Z as G,b a
     `}submitButtonTemplate(){const e=this.suggestions.find(i=>{var s,r;return((r=(s=i.name)==null?void 0:s.split("."))==null?void 0:r[0])===this.name&&i.registered});if(this.loading)return c`<wui-loading-spinner
         class="input-loading-spinner"
         color="secondary"
-      ></wui-loading-spinner>`;const t=`${this.name}${z.WC_NAME_SUFFIX}`;return c`
+      ></wui-loading-spinner>`;const t=`${this.name}${I.WC_NAME_SUFFIX}`;return c`
       <wui-icon-link
         ?disabled=${!!e}
         class="input-submit-button"
@@ -363,7 +363,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,j as V,G as H,e as P,u as q,Z as G,b a
             data-testid="account-name-suggestion"
             @click=${()=>this.onSubmitName(e.name)}
           ></wui-account-name-suggestion-item>`)}
-    </wui-flex>`}isAllowedToSubmit(e){var t;const i=(t=e.split("."))==null?void 0:t[0],s=this.suggestions.find(r=>{var o,n;return((n=(o=r.name)==null?void 0:o.split("."))==null?void 0:n[0])===i&&r.registered});return!this.loading&&!this.error&&!this.profileName&&i&&x.validateName(i)&&!s}async onSubmitName(e){try{if(!this.isAllowedToSubmit(e))return;_.sendEvent({type:"track",event:"REGISTER_NAME_INITIATED",properties:{isSmartAccount:S(h.state.activeChain)===g.ACCOUNT_TYPES.SMART_ACCOUNT,ensName:e}}),await x.registerName(e),_.sendEvent({type:"track",event:"REGISTER_NAME_SUCCESS",properties:{isSmartAccount:S(h.state.activeChain)===g.ACCOUNT_TYPES.SMART_ACCOUNT,ensName:e}})}catch(t){Q.showError(t.message),_.sendEvent({type:"track",event:"REGISTER_NAME_ERROR",properties:{isSmartAccount:S(h.state.activeChain)===g.ACCOUNT_TYPES.SMART_ACCOUNT,ensName:e,error:P.parseError(t)}})}}onEnterKey(e){if(e.key==="Enter"&&this.name&&this.isAllowedToSubmit(this.name)){const t=`${this.name}${z.WC_NAME_SUFFIX}`;this.onSubmitName(t)}}};p.styles=le;v([d()],p.prototype,"errorMessage",void 0);v([l()],p.prototype,"name",void 0);v([l()],p.prototype,"error",void 0);v([l()],p.prototype,"loading",void 0);v([l()],p.prototype,"suggestions",void 0);v([l()],p.prototype,"profileName",void 0);p=v([w("w3m-register-account-name-view")],p);const ue=W`
+    </wui-flex>`}isAllowedToSubmit(e){var t;const i=(t=e.split("."))==null?void 0:t[0],s=this.suggestions.find(r=>{var o,n;return((n=(o=r.name)==null?void 0:o.split("."))==null?void 0:n[0])===i&&r.registered});return!this.loading&&!this.error&&!this.profileName&&i&&x.validateName(i)&&!s}async onSubmitName(e){try{if(!this.isAllowedToSubmit(e))return;O.sendEvent({type:"track",event:"REGISTER_NAME_INITIATED",properties:{isSmartAccount:S(h.state.activeChain)===g.ACCOUNT_TYPES.SMART_ACCOUNT,ensName:e}}),await x.registerName(e),O.sendEvent({type:"track",event:"REGISTER_NAME_SUCCESS",properties:{isSmartAccount:S(h.state.activeChain)===g.ACCOUNT_TYPES.SMART_ACCOUNT,ensName:e}})}catch(t){J.showError(t.message),O.sendEvent({type:"track",event:"REGISTER_NAME_ERROR",properties:{isSmartAccount:S(h.state.activeChain)===g.ACCOUNT_TYPES.SMART_ACCOUNT,ensName:e,error:z.parseError(t)}})}}onEnterKey(e){if(e.key==="Enter"&&this.name&&this.isAllowedToSubmit(this.name)){const t=`${this.name}${I.WC_NAME_SUFFIX}`;this.onSubmitName(t)}}};p.styles=de;v([l()],p.prototype,"errorMessage",void 0);v([d()],p.prototype,"name",void 0);v([d()],p.prototype,"error",void 0);v([d()],p.prototype,"loading",void 0);v([d()],p.prototype,"suggestions",void 0);v([d()],p.prototype,"profileName",void 0);p=v([w("w3m-register-account-name-view")],p);const ue=W`
   .continue-button-container {
     width: 100%;
   }
@@ -376,7 +376,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,j as V,G as H,e as P,u as q,Z as G,b a
       >
         ${this.onboardingTemplate()} ${this.buttonsTemplate()}
         <wui-link
-          @click=${()=>{P.openHref(q.URLS.FAQ,"_blank")}}
+          @click=${()=>{z.openHref(q.URLS.FAQ,"_blank")}}
         >
           Learn more
           <wui-icon color="inherit" slot="iconRight" name="externalLink"></wui-icon>

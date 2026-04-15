@@ -1,4 +1,4 @@
-import{c as b,a0 as f,Z as E,Y as x,_ as l,e as O,g as $,k as R,l as T,m as L,n as h,z as k,J as d,E as I,o as v}from"./index-C1EJvMd1.js";const C=R`
+import{c as b,a0 as f,b as E,Y as x,_ as l,X as O,f as I,k as L,m as T,L as R,P as c,j as k,J as d,B as $,o as v}from"./index-BClGTh2N.js";const P=L`
   :host {
     position: relative;
     display: inline-block;
@@ -51,14 +51,14 @@ import{c as b,a0 as f,Z as E,Y as x,_ as l,e as O,g as $,k as R,l as T,m as L,n 
     border: 1px solid ${({tokens:t})=>t.theme.borderSecondary};
     box-shadow: 0px 0px 0px 4px ${({tokens:t})=>t.core.foregroundAccent040};
   }
-`;var y=function(t,e,i,n){var s=arguments.length,o=s<3?e:n,r;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(t,e,i,n);else for(var a=t.length-1;a>=0;a--)(r=t[a])&&(o=(s<3?r(o):s>3?r(e,i,o):r(e,i))||o);return s>3&&o&&Object.defineProperty(e,i,o),o};let c=class extends b{constructor(){super(...arguments),this.disabled=!1,this.value=""}render(){return l`<input
+`;var y=function(t,e,i,n){var s=arguments.length,o=s<3?e:n,r;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(t,e,i,n);else for(var a=t.length-1;a>=0;a--)(r=t[a])&&(o=(s<3?r(o):s>3?r(e,i,o):r(e,i))||o);return s>3&&o&&Object.defineProperty(e,i,o),o};let h=class extends b{constructor(){super(...arguments),this.disabled=!1,this.value=""}render(){return l`<input
       type="number"
       maxlength="1"
       inputmode="numeric"
       autofocus
       ?disabled=${this.disabled}
       value=${this.value}
-    /> `}};c.styles=[T,L,C];y([h({type:Boolean})],c.prototype,"disabled",void 0);y([h({type:String})],c.prototype,"value",void 0);c=y([v("wui-input-numeric")],c);const P=k`
+    /> `}};h.styles=[T,R,P];y([c({type:Boolean})],h.prototype,"disabled",void 0);y([c({type:String})],h.prototype,"value",void 0);h=y([v("wui-input-numeric")],h);const C=k`
   :host {
     position: relative;
     display: block;
@@ -76,7 +76,7 @@ import{c as b,a0 as f,Z as E,Y as x,_ as l,e as O,g as $,k as R,l as T,m as L,n 
             </wui-input-numeric>
           `)}
       </wui-flex>
-    `}updateInput(t,e,i){const n=this.numerics[e],s=t||(n?this.getInputElement(n):void 0);s&&(s.value=i,this.values=this.values.map((o,r)=>r===e?i:o))}selectInput(t){const e=t.target;if(e){const i=this.getInputElement(e);i?.select()}}handleInput(t,e){const i=t.target,n=this.getInputElement(i);if(n){const s=n.value;t.inputType==="insertFromPaste"?this.handlePaste(n,s,e):I.isNumber(s)&&t.data?(this.updateInput(n,e,t.data),this.focusInputField("next",e)):this.updateInput(n,e,"")}this.dispatchInputChangeEvent()}handlePaste(t,e,i){const n=e[0];if(n&&I.isNumber(n)){this.updateInput(t,i,n);const s=e.substring(1);if(i+1<this.length&&s.length){const o=this.numerics[i+1],r=o?this.getInputElement(o):void 0;r&&this.handlePaste(r,s,i+1)}else this.focusInputField("next",i)}else this.updateInput(t,i,"")}getInputElement(t){var e;return(e=t.shadowRoot)!=null&&e.querySelector("input")?t.shadowRoot.querySelector("input"):null}dispatchInputChangeEvent(){const t=this.values.join("");this.dispatchEvent(new CustomEvent("inputChange",{detail:t,bubbles:!0,composed:!0}))}};p.styles=[T,P];m([h({type:Number})],p.prototype,"length",void 0);m([h({type:String})],p.prototype,"otp",void 0);m([d()],p.prototype,"values",void 0);p=m([v("wui-otp")],p);const S=k`
+    `}updateInput(t,e,i){const n=this.numerics[e],s=t||(n?this.getInputElement(n):void 0);s&&(s.value=i,this.values=this.values.map((o,r)=>r===e?i:o))}selectInput(t){const e=t.target;if(e){const i=this.getInputElement(e);i?.select()}}handleInput(t,e){const i=t.target,n=this.getInputElement(i);if(n){const s=n.value;t.inputType==="insertFromPaste"?this.handlePaste(n,s,e):$.isNumber(s)&&t.data?(this.updateInput(n,e,t.data),this.focusInputField("next",e)):this.updateInput(n,e,"")}this.dispatchInputChangeEvent()}handlePaste(t,e,i){const n=e[0];if(n&&$.isNumber(n)){this.updateInput(t,i,n);const s=e.substring(1);if(i+1<this.length&&s.length){const o=this.numerics[i+1],r=o?this.getInputElement(o):void 0;r&&this.handlePaste(r,s,i+1)}else this.focusInputField("next",i)}else this.updateInput(t,i,"")}getInputElement(t){var e;return(e=t.shadowRoot)!=null&&e.querySelector("input")?t.shadowRoot.querySelector("input"):null}dispatchInputChangeEvent(){const t=this.values.join("");this.dispatchEvent(new CustomEvent("inputChange",{detail:t,bubbles:!0,composed:!0}))}};p.styles=[T,C];m([c({type:Number})],p.prototype,"length",void 0);m([c({type:String})],p.prototype,"otp",void 0);m([d()],p.prototype,"values",void 0);p=m([v("wui-otp")],p);const S=k`
   wui-loading-spinner {
     margin: 9px auto;
   }
@@ -129,4 +129,4 @@ import{c as b,a0 as f,Z as E,Y as x,_ as l,e as O,g as $,k as R,l as T,m as L,n 
           </wui-link>
         </wui-flex>
       </wui-flex>
-    `}startOTPTimeout(){this.timeoutTimeLeft=f.getTimeToNextEmailLogin(),this.OTPTimeout=setInterval(()=>{this.timeoutTimeLeft>0?this.timeoutTimeLeft=f.getTimeToNextEmailLogin():clearInterval(this.OTPTimeout)},1e3)}async onOtpInputChange(t){var e;try{this.loading||(this.otp=t.detail,this.shouldSubmitOnOtpChange()&&(this.loading=!0,await((e=this.onOtpSubmit)==null?void 0:e.call(this,this.otp))))}catch(i){this.error=O.parseError(i),this.loading=!1}}async onResendCode(){try{if(this.onOtpResend){if(!this.loading&&!this.timeoutTimeLeft){if(this.error="",this.otp="",!x.getAuthConnector()||!this.email)throw new Error("w3m-email-otp-widget: Unable to resend email");this.loading=!0,await this.onOtpResend(this.email),this.startOTPTimeout(),$.showSuccess("Code email resent")}}else this.onStartOver&&this.onStartOver()}catch(t){$.showError(t)}finally{this.loading=!1}}getFooterLabels(t){return this.onStartOver?{title:"Something wrong?",action:`Try again ${t?`in ${this.timeoutTimeLeft}s`:""}`}:{title:"Didn't receive it?",action:`Resend ${t?`in ${this.timeoutTimeLeft}s`:"Code"}`}}shouldSubmitOnOtpChange(){return this.authConnector&&this.otp.length===w.OTP_LENGTH}};u.OTP_LENGTH=6;u.styles=S;g([d()],u.prototype,"loading",void 0);g([d()],u.prototype,"timeoutTimeLeft",void 0);g([d()],u.prototype,"error",void 0);u=w=g([v("w3m-email-otp-widget")],u);export{u};
+    `}startOTPTimeout(){this.timeoutTimeLeft=f.getTimeToNextEmailLogin(),this.OTPTimeout=setInterval(()=>{this.timeoutTimeLeft>0?this.timeoutTimeLeft=f.getTimeToNextEmailLogin():clearInterval(this.OTPTimeout)},1e3)}async onOtpInputChange(t){var e;try{this.loading||(this.otp=t.detail,this.shouldSubmitOnOtpChange()&&(this.loading=!0,await((e=this.onOtpSubmit)==null?void 0:e.call(this,this.otp))))}catch(i){this.error=O.parseError(i),this.loading=!1}}async onResendCode(){try{if(this.onOtpResend){if(!this.loading&&!this.timeoutTimeLeft){if(this.error="",this.otp="",!x.getAuthConnector()||!this.email)throw new Error("w3m-email-otp-widget: Unable to resend email");this.loading=!0,await this.onOtpResend(this.email),this.startOTPTimeout(),I.showSuccess("Code email resent")}}else this.onStartOver&&this.onStartOver()}catch(t){I.showError(t)}finally{this.loading=!1}}getFooterLabels(t){return this.onStartOver?{title:"Something wrong?",action:`Try again ${t?`in ${this.timeoutTimeLeft}s`:""}`}:{title:"Didn't receive it?",action:`Resend ${t?`in ${this.timeoutTimeLeft}s`:"Code"}`}}shouldSubmitOnOtpChange(){return this.authConnector&&this.otp.length===w.OTP_LENGTH}};u.OTP_LENGTH=6;u.styles=S;g([d()],u.prototype,"loading",void 0);g([d()],u.prototype,"timeoutTimeLeft",void 0);g([d()],u.prototype,"error",void 0);u=w=g([v("w3m-email-otp-widget")],u);export{u};

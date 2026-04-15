@@ -1,4 +1,4 @@
-import{c as s,_ as f,z as w,o as d}from"./index-C1EJvMd1.js";const p=w`
+import{c as s,_ as f,j as w,o as d}from"./index-BClGTh2N.js";const p=w`
   :host > wui-flex:first-child {
     height: 500px;
     overflow-y: auto;

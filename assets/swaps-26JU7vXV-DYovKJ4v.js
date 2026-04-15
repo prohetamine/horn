@@ -1,4 +1,4 @@
-import{c as P,C as y,Z as $,_ as u,D as h,V as L,e as _,q as M,v as O,f as K,U as F,k as I,J as l,n as w,l as V,m as Q,W as q,o as A}from"./index-C1EJvMd1.js";import{a as n}from"./SwapController-oNBQF_cs-Dgmk4X6k.js";import"./index-76nq0woB-DpM47oqu.js";const H={numericInputKeyDown(e,t,o){const a=["Backspace","Meta","Ctrl","a","A","c","C","x","X","v","V","ArrowLeft","ArrowRight","Tab"],s=e.metaKey||e.ctrlKey,i=e.key,r=i.toLocaleLowerCase(),c=r==="a",D=r==="c",U=r==="v",R=r==="x",N=i===",",j=i===".",z=i>="0"&&i<="9";!s&&(c||D||U||R)&&e.preventDefault(),t==="0"&&!N&&!j&&i==="0"&&e.preventDefault(),t==="0"&&z&&(o(i),e.preventDefault()),(N||j)&&(t||(o("0."),e.preventDefault()),(t!=null&&t.includes(".")||t!=null&&t.includes(","))&&e.preventDefault()),!z&&!a.includes(i)&&!j&&!N&&e.preventDefault()}},G=I`
+import{c as P,C as y,b as $,_ as u,$ as h,A as L,X as _,q as M,v as O,e as K,U as F,k as I,J as l,P as w,m as V,L as q,i as Q,o as A}from"./index-BClGTh2N.js";import{a as n}from"./SwapController-ZhAftJtk-BYqxLZaL.js";import"./index-Bdf55gPm-DlBrvQkl.js";const H={numericInputKeyDown(e,t,o){const a=["Backspace","Meta","Ctrl","a","A","c","C","x","X","v","V","ArrowLeft","ArrowRight","Tab"],s=e.metaKey||e.ctrlKey,i=e.key,r=i.toLocaleLowerCase(),c=r==="a",D=r==="c",U=r==="v",R=r==="x",N=i===",",j=i===".",z=i>="0"&&i<="9";!s&&(c||D||U||R)&&e.preventDefault(),t==="0"&&!N&&!j&&i==="0"&&e.preventDefault(),t==="0"&&z&&(o(i),e.preventDefault()),(N||j)&&(t||(o("0."),e.preventDefault()),(t!=null&&t.includes(".")||t!=null&&t.includes(","))&&e.preventDefault()),!z&&!a.includes(i)&&!j&&!N&&e.preventDefault()}},G=I`
   :host {
     width: 100%;
   }
@@ -47,7 +47,7 @@ import{c as P,C as y,Z as $,_ as u,D as h,V as L,e as _,q as M,v as O,f as K,U a
   .details-row.provider-free-row {
     padding-right: ${({spacing:e})=>e[2]};
   }
-`;var x=function(e,t,o,a){var s=arguments.length,i=s<3?t:a,r;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")i=Reflect.decorate(e,t,o,a);else for(var c=e.length-1;c>=0;c--)(r=e[c])&&(i=(s<3?r(i):s>3?r(t,o,i):r(t,o))||i);return s>3&&i&&Object.defineProperty(t,o,i),i};const Y=q.CONVERT_SLIPPAGE_TOLERANCE;let k=class extends P{constructor(){var e;super(),this.unsubscribe=[],this.networkName=(e=y.state.activeCaipNetwork)==null?void 0:e.name,this.detailsOpen=!1,this.sourceToken=n.state.sourceToken,this.toToken=n.state.toToken,this.toTokenAmount=n.state.toTokenAmount,this.sourceTokenPriceInUSD=n.state.sourceTokenPriceInUSD,this.toTokenPriceInUSD=n.state.toTokenPriceInUSD,this.priceImpact=n.state.priceImpact,this.maxSlippage=n.state.maxSlippage,this.networkTokenSymbol=n.state.networkTokenSymbol,this.inputError=n.state.inputError,this.unsubscribe.push(n.subscribe(t=>{this.sourceToken=t.sourceToken,this.toToken=t.toToken,this.toTokenAmount=t.toTokenAmount,this.priceImpact=t.priceImpact,this.maxSlippage=t.maxSlippage,this.sourceTokenPriceInUSD=t.sourceTokenPriceInUSD,this.toTokenPriceInUSD=t.toTokenPriceInUSD,this.inputError=t.inputError}))}render(){const e=this.toTokenAmount&&this.maxSlippage?h.bigNumber(this.toTokenAmount).minus(this.maxSlippage).toString():null;if(!this.sourceToken||!this.toToken||this.inputError)return null;const t=this.sourceTokenPriceInUSD&&this.toTokenPriceInUSD?1/this.toTokenPriceInUSD*this.sourceTokenPriceInUSD:0;return u`
+`;var x=function(e,t,o,a){var s=arguments.length,i=s<3?t:a,r;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")i=Reflect.decorate(e,t,o,a);else for(var c=e.length-1;c>=0;c--)(r=e[c])&&(i=(s<3?r(i):s>3?r(t,o,i):r(t,o))||i);return s>3&&i&&Object.defineProperty(t,o,i),i};const X=Q.CONVERT_SLIPPAGE_TOLERANCE;let k=class extends P{constructor(){var e;super(),this.unsubscribe=[],this.networkName=(e=y.state.activeCaipNetwork)==null?void 0:e.name,this.detailsOpen=!1,this.sourceToken=n.state.sourceToken,this.toToken=n.state.toToken,this.toTokenAmount=n.state.toTokenAmount,this.sourceTokenPriceInUSD=n.state.sourceTokenPriceInUSD,this.toTokenPriceInUSD=n.state.toTokenPriceInUSD,this.priceImpact=n.state.priceImpact,this.maxSlippage=n.state.maxSlippage,this.networkTokenSymbol=n.state.networkTokenSymbol,this.inputError=n.state.inputError,this.unsubscribe.push(n.subscribe(t=>{this.sourceToken=t.sourceToken,this.toToken=t.toToken,this.toTokenAmount=t.toTokenAmount,this.priceImpact=t.priceImpact,this.maxSlippage=t.maxSlippage,this.sourceTokenPriceInUSD=t.sourceTokenPriceInUSD,this.toTokenPriceInUSD=t.toTokenPriceInUSD,this.inputError=t.inputError}))}render(){const e=this.toTokenAmount&&this.maxSlippage?h.bigNumber(this.toTokenAmount).minus(this.maxSlippage).toString():null;if(!this.sourceToken||!this.toToken||this.inputError)return null;const t=this.sourceTokenPriceInUSD&&this.toTokenPriceInUSD?1/this.toTokenPriceInUSD*this.sourceTokenPriceInUSD:0;return u`
       <wui-flex flexDirection="column" alignItems="center" gap="01" class="details-container">
         <wui-flex flexDirection="column">
           <button @click=${this.toggleDetails.bind(this)}>
@@ -117,7 +117,7 @@ import{c as P,C as y,Z as $,_ as u,D as h,V as L,e as _,q as M,v as O,f as K,U a
                           <wui-flex>
                             <wui-text variant="sm-regular" color="secondary">
                               ${h.formatNumberToLocalString(this.maxSlippage,6)}
-                              ${this.toToken.symbol} ${Y}%
+                              ${this.toToken.symbol} ${X}%
                             </wui-text>
                           </wui-flex>
                         </wui-flex>
@@ -142,7 +142,7 @@ import{c as P,C as y,Z as $,_ as u,D as h,V as L,e as _,q as M,v as O,f as K,U a
               `:null}
         </wui-flex>
       </wui-flex>
-    `}toggleDetails(){this.detailsOpen=!this.detailsOpen}};k.styles=[G];x([l()],k.prototype,"networkName",void 0);x([w()],k.prototype,"detailsOpen",void 0);x([l()],k.prototype,"sourceToken",void 0);x([l()],k.prototype,"toToken",void 0);x([l()],k.prototype,"toTokenAmount",void 0);x([l()],k.prototype,"sourceTokenPriceInUSD",void 0);x([l()],k.prototype,"toTokenPriceInUSD",void 0);x([l()],k.prototype,"priceImpact",void 0);x([l()],k.prototype,"maxSlippage",void 0);x([l()],k.prototype,"networkTokenSymbol",void 0);x([l()],k.prototype,"inputError",void 0);k=x([A("w3m-swap-details")],k);const J=I`
+    `}toggleDetails(){this.detailsOpen=!this.detailsOpen}};k.styles=[G];x([l()],k.prototype,"networkName",void 0);x([w()],k.prototype,"detailsOpen",void 0);x([l()],k.prototype,"sourceToken",void 0);x([l()],k.prototype,"toToken",void 0);x([l()],k.prototype,"toTokenAmount",void 0);x([l()],k.prototype,"sourceTokenPriceInUSD",void 0);x([l()],k.prototype,"toTokenPriceInUSD",void 0);x([l()],k.prototype,"priceImpact",void 0);x([l()],k.prototype,"maxSlippage",void 0);x([l()],k.prototype,"networkTokenSymbol",void 0);x([l()],k.prototype,"inputError",void 0);k=x([A("w3m-swap-details")],k);const Y=I`
   :host {
     width: 100%;
   }
@@ -211,7 +211,7 @@ import{c as P,C as y,Z as $,_ as u,D as h,V as L,e as _,q as M,v as O,f as K,U a
       >
         <wui-shimmer width="80px" height="40px" rounded variant="light"></wui-shimmer>
       </wui-flex>
-    `}};E.styles=[J];W([w()],E.prototype,"target",void 0);E=W([A("w3m-swap-input-skeleton")],E);const Z=I`
+    `}};E.styles=[Y];W([w()],E.prototype,"target",void 0);E=W([A("w3m-swap-input-skeleton")],E);const J=I`
   :host > wui-flex {
     display: flex;
     flex-direction: row;
@@ -298,7 +298,7 @@ import{c as P,C as y,Z as $,_ as u,D as h,V as L,e as _,q as M,v as O,f as K,U a
   .market-value {
     min-height: 18px;
   }
-`;var T=function(e,t,o,a){var s=arguments.length,i=s<3?t:a,r;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")i=Reflect.decorate(e,t,o,a);else for(var c=e.length-1;c>=0;c--)(r=e[c])&&(i=(s<3?r(i):s>3?r(t,o,i):r(t,o))||i);return s>3&&i&&Object.defineProperty(t,o,i),i};const X=5e-5;let f=class extends P{constructor(){super(...arguments),this.focused=!1,this.price=0,this.target="sourceToken",this.onSetAmount=null,this.onSetMaxValue=null}render(){const e=this.marketValue||"0",t=h.bigNumber(e).gt("0");return u`
+`;var T=function(e,t,o,a){var s=arguments.length,i=s<3?t:a,r;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")i=Reflect.decorate(e,t,o,a);else for(var c=e.length-1;c>=0;c--)(r=e[c])&&(i=(s<3?r(i):s>3?r(t,o,i):r(t,o))||i);return s>3&&i&&Object.defineProperty(t,o,i),i};const Z=5e-5;let f=class extends P{constructor(){super(...arguments),this.focused=!1,this.price=0,this.target="sourceToken",this.onSetAmount=null,this.onSetMaxValue=null}render(){const e=this.marketValue||"0",t=h.bigNumber(e).gt("0");return u`
       <wui-flex
         class="${this.focused?"focus":""}"
         justifyContent="space-between"
@@ -355,7 +355,7 @@ import{c as P,C as y,Z as $,_ as u,D as h,V as L,e as _,q as M,v as O,f as K,U a
         @click=${this.onSelectToken.bind(this)}
       >
         Select token
-      </wui-button>`}tokenBalanceTemplate(){const e=h.multiply(this.balance,this.price),t=e?e?.gt(X):!1;return u`
+      </wui-button>`}tokenBalanceTemplate(){const e=h.multiply(this.balance,this.price),t=e?e?.gt(Z):!1;return u`
       ${t?u`<wui-text variant="sm-regular" color="secondary">
             ${h.formatNumberToLocalString(this.balance,2)}
           </wui-text>`:null}
@@ -364,7 +364,7 @@ import{c as P,C as y,Z as $,_ as u,D as h,V as L,e as _,q as M,v as O,f as K,U a
         <wui-text color="accent-primary" variant="sm-medium">Max</wui-text>
       </button>`:u` <button class="max-value-button" @click=${this.onBuyToken.bind(this)}>
       <wui-text color="accent-primary" variant="sm-medium">Buy</wui-text>
-    </button>`}onFocusChange(e){this.focused=e}onSelectToken(){O.sendEvent({type:"track",event:"CLICK_SELECT_TOKEN_TO_SWAP"}),$.push("SwapSelectToken",{target:this.target})}onBuyToken(){$.push("OnRampProviders")}};f.styles=[Z];T([w()],f.prototype,"focused",void 0);T([w()],f.prototype,"balance",void 0);T([w()],f.prototype,"value",void 0);T([w()],f.prototype,"price",void 0);T([w()],f.prototype,"marketValue",void 0);T([w()],f.prototype,"disabled",void 0);T([w()],f.prototype,"target",void 0);T([w()],f.prototype,"token",void 0);T([w()],f.prototype,"onSetAmount",void 0);T([w()],f.prototype,"onSetMaxValue",void 0);f=T([A("w3m-swap-input")],f);const ee=I`
+    </button>`}onFocusChange(e){this.focused=e}onSelectToken(){O.sendEvent({type:"track",event:"CLICK_SELECT_TOKEN_TO_SWAP"}),$.push("SwapSelectToken",{target:this.target})}onBuyToken(){$.push("OnRampProviders")}};f.styles=[J];T([w()],f.prototype,"focused",void 0);T([w()],f.prototype,"balance",void 0);T([w()],f.prototype,"value",void 0);T([w()],f.prototype,"price",void 0);T([w()],f.prototype,"marketValue",void 0);T([w()],f.prototype,"disabled",void 0);T([w()],f.prototype,"target",void 0);T([w()],f.prototype,"token",void 0);T([w()],f.prototype,"onSetAmount",void 0);T([w()],f.prototype,"onSetMaxValue",void 0);f=T([A("w3m-swap-input")],f);const ee=I`
   :host > wui-flex:first-child {
     overflow-y: auto;
     overflow-x: hidden;
@@ -835,7 +835,7 @@ import{c as P,C as y,Z as $,_ as u,D as h,V as L,e as _,q as M,v as O,f as K,U a
         height="40"
         src=${this.imageSrc}
         @onLoadError=${this.imageLoadError}
-      ></wui-image>`:null}imageLoadError(){this.imageError=!0}};S.styles=[V,Q,oe];C([w()],S.prototype,"imageSrc",void 0);C([w()],S.prototype,"name",void 0);C([w()],S.prototype,"symbol",void 0);C([w()],S.prototype,"price",void 0);C([w()],S.prototype,"amount",void 0);C([l()],S.prototype,"visible",void 0);C([l()],S.prototype,"imageError",void 0);S=C([A("wui-token-list-item")],S);const ie=I`
+      ></wui-image>`:null}imageLoadError(){this.imageError=!0}};S.styles=[V,q,oe];C([w()],S.prototype,"imageSrc",void 0);C([w()],S.prototype,"name",void 0);C([w()],S.prototype,"symbol",void 0);C([w()],S.prototype,"price",void 0);C([w()],S.prototype,"amount",void 0);C([l()],S.prototype,"visible",void 0);C([l()],S.prototype,"imageError",void 0);S=C([A("wui-token-list-item")],S);const ie=I`
   :host {
     width: 100%;
   }
