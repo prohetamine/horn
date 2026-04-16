@@ -19,7 +19,7 @@
     "react-responsive": "^10.0.1",
     "react-router": "^7.13.1",
     "sleep-promise": "^9.1.0",
-    "stas-pay": "^0.1.226",
+    "stas-pay": "^0.1.228",
     "styled-components": "^6.3.11",
     "uniqid": "^5.4.0",
     "use-local-storage": "^3.0.0",
