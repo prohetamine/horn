@@ -37,6 +37,7 @@ const PollVariantItem = ({ variant: { colorIndex, iconIndex, title }, poll, inde
     const stopPoll = Redstone.useNote(`stop-poll-${poll?.id}`, {
         self: true, 
         selfRead: true, 
+        address: poll?.address, 
         once: true,
         cache: 60 * 1000 * 10,
         load: !!poll?.id
