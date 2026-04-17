@@ -20,13 +20,13 @@ import iconAlert from './../assets/icons/small/alert.svg?react'
 import iconProfile from './../assets/icons/small/profile.svg?react'
 import iconSmallLink from './../assets/icons/small/link.svg?react'
 
-const PollVariantItem = ({ variant: { colorIndex, iconIndex, title }, poll, index }) => {
+const PollVariantItem = ({ variant: { colorIndex, iconIndex, title }, poll, address, index }) => {
     const lang = useContext(LanguageContext)
 
     const counter = Redstone.useCounter(`counter-${poll?.id}`, { 
         copyId: index, 
         stas: poll?.isPay, 
-        paymentAddress: poll?.address || '',
+        paymentAddress: address || '',
         once: poll?.isUnique,
         cache: 10 * 60000,
         interval: 10 * 60000,
@@ -37,7 +37,7 @@ const PollVariantItem = ({ variant: { colorIndex, iconIndex, title }, poll, inde
     const stopPoll = Redstone.useNote(`stop-poll-${poll?.id}`, {
         self: true, 
         selfRead: true, 
-        address: poll?.address, 
+        address, 
         once: true,
         cache: 60 * 1000 * 10,
         load: !!poll?.id
@@ -216,6 +216,7 @@ const PollItem = ({ index, chainId, address, data: poll, copyId, onHidden }) => 
                                         <PollVariantItem 
                                             variant={variant} 
                                             poll={poll} 
+                                            address={address}
                                             index={key} 
                                             key={key} 
                                         />
