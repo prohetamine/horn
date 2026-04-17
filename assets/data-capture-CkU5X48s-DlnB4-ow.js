@@ -1,4 +1,4 @@
-import{V as m,Z as h,C as g,e as p,c as y,_ as s,D as I,T as E,$ as R,g as $,l as S,J as u,o as x}from"./index-Bi7oTyW1.js";import{u as C}from"./index-pWpJ3MmM-C9gDeWDB.js";import{ReownAuthentication as v}from"./features-BSxRsZhl-BzgTgDVI.js";const W=$`
+import{V as m,Z as h,C as g,f as p,c as y,_ as s,B as I,T as E,$ as R,h as $,l as S,J as u,o as x}from"./index-DEnPuzs0.js";import{u as C}from"./index-Bz_Z-eFp-DGAHfQcG.js";import{ReownAuthentication as v}from"./features-CYa9WjCx-C8MPOoW9.js";const W=$`
   .email-sufixes {
     display: flex;
     flex-direction: row;
@@ -17,9 +17,9 @@ import{V as m,Z as h,C as g,e as p,c as y,_ as s,D as I,T as E,$ as R,g as $,l a
       display: none;
     }
   }
-`;var k=function(t,i,a,l){var n=arguments.length,e=n<3?i:l,r;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")e=Reflect.decorate(t,i,a,l);else for(var o=t.length-1;o>=0;o--)(r=t[o])&&(e=(n<3?r(e):n>3?r(i,a,e):r(i,a))||e);return n>3&&e&&Object.defineProperty(i,a,e),e};const D=["@gmail.com","@outlook.com","@yahoo.com","@hotmail.com","@aol.com","@icloud.com","@zoho.com"];let w=class extends y{constructor(){super(...arguments),this.email=""}render(){const t=D.filter(this.filter.bind(this)).map(this.item.bind(this));return t.length===0?null:s`<div class="email-sufixes">${t}</div>`}filter(t){if(!this.email)return!1;const i=this.email.split("@");if(i.length<2)return!0;const a=i.pop();return t.includes(a)&&t!==`@${a}`}item(t){return s`<wui-button variant="neutral" size="sm" @click=${()=>{const i=this.email.split("@");i.length>1&&i.pop();const a=i[0]+t;this.dispatchEvent(new CustomEvent("change",{detail:a,bubbles:!0,composed:!0}))}}
+`;var k=function(t,i,a,l){var n=arguments.length,e=n<3?i:l,r;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")e=Reflect.decorate(t,i,a,l);else for(var o=t.length-1;o>=0;o--)(r=t[o])&&(e=(n<3?r(e):n>3?r(i,a,e):r(i,a))||e);return n>3&&e&&Object.defineProperty(i,a,e),e};const z=["@gmail.com","@outlook.com","@yahoo.com","@hotmail.com","@aol.com","@icloud.com","@zoho.com"];let w=class extends y{constructor(){super(...arguments),this.email=""}render(){const t=z.filter(this.filter.bind(this)).map(this.item.bind(this));return t.length===0?null:s`<div class="email-sufixes">${t}</div>`}filter(t){if(!this.email)return!1;const i=this.email.split("@");if(i.length<2)return!0;const a=i.pop();return t.includes(a)&&t!==`@${a}`}item(t){return s`<wui-button variant="neutral" size="sm" @click=${()=>{const i=this.email.split("@");i.length>1&&i.pop();const a=i[0]+t;this.dispatchEvent(new CustomEvent("change",{detail:a,bubbles:!0,composed:!0}))}}
       >${t}</wui-button
-    >`}};w.styles=[W];k([S()],w.prototype,"email",void 0);w=k([x("w3m-email-suffixes-widget")],w);const z=$`
+    >`}};w.styles=[W];k([S()],w.prototype,"email",void 0);w=k([x("w3m-email-suffixes-widget")],w);const D=$`
   .recent-emails {
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@ import{V as m,Z as h,C as g,e as p,c as y,_ as s,D as I,T as E,$ as R,g as $,l a
       class="recent-emails-list-item"
     >
       <wui-text variant="paragraph-500" color="fg-100">${t}</wui-text>
-    </wui-list-item>`}};f.styles=[z];A([S()],f.prototype,"emails",void 0);f=A([x("w3m-recent-emails-widget")],f);var O=function(t,i,a,l){var n=arguments.length,e=n<3?i:l,r;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")e=Reflect.decorate(t,i,a,l);else for(var o=t.length-1;o>=0;o--)(r=t[o])&&(e=(n<3?r(e):n>3?r(i,a,e):r(i,a))||e);return n>3&&e&&Object.defineProperty(i,a,e),e};let b=class extends C{constructor(){super(...arguments),this.siwx=m.state.siwx,this.onOtpSubmit=async t=>{await this.siwx.confirmEmailOtp({code:t}),h.replace("SIWXSignMessage")},this.onOtpResend=async t=>{const i=g.getAccountData();if(!(i!=null&&i.caipAddress))throw new Error("No account data found");await this.siwx.requestEmailOtp({email:t,account:i.caipAddress})}}connectedCallback(){(!this.siwx||!(this.siwx instanceof v))&&p.showError("ReownAuthentication is not initialized."),super.connectedCallback()}shouldSubmitOnOtpChange(){return this.otp.length===C.OTP_LENGTH}};O([u()],b.prototype,"siwx",void 0);b=O([x("w3m-data-capture-otp-confirm-view")],b);const j=$`
+    </wui-list-item>`}};f.styles=[D];A([S()],f.prototype,"emails",void 0);f=A([x("w3m-recent-emails-widget")],f);var O=function(t,i,a,l){var n=arguments.length,e=n<3?i:l,r;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")e=Reflect.decorate(t,i,a,l);else for(var o=t.length-1;o>=0;o--)(r=t[o])&&(e=(n<3?r(e):n>3?r(i,a,e):r(i,a))||e);return n>3&&e&&Object.defineProperty(i,a,e),e};let b=class extends C{constructor(){super(...arguments),this.siwx=m.state.siwx,this.onOtpSubmit=async t=>{await this.siwx.confirmEmailOtp({code:t}),h.replace("SIWXSignMessage")},this.onOtpResend=async t=>{const i=g.getAccountData();if(!(i!=null&&i.caipAddress))throw new Error("No account data found");await this.siwx.requestEmailOtp({email:t,account:i.caipAddress})}}connectedCallback(){(!this.siwx||!(this.siwx instanceof v))&&p.showError("ReownAuthentication is not initialized."),super.connectedCallback()}shouldSubmitOnOtpChange(){return this.otp.length===C.OTP_LENGTH}};O([u()],b.prototype,"siwx",void 0);b=O([x("w3m-data-capture-otp-confirm-view")],b);const j=$`
   .hero {
     display: flex;
     flex-direction: column;

@@ -1,4 +1,4 @@
-import{c as w,H as c,n as z,m,_ as l,X as L,j as q,e as U,Z as D,C as A,x as K,d as V,U as X,P as k,r as j,V as B,q as $,I,J as u,l as p,O as F,o as b}from"./index-Bi7oTyW1.js";const N=I`
+import{c as w,F as c,n as z,m,_ as l,X as L,j as q,f as U,Z as D,C as A,x as K,e as V,U as F,H as k,r as j,V as B,q as $,I,J as u,l as p,O as X,o as b}from"./index-DEnPuzs0.js";const N=I`
   :host > wui-grid {
     max-height: 360px;
     overflow: auto;
@@ -112,7 +112,7 @@ import{c as w,H as c,n as z,m,_ as l,X as L,j as q,e as U,Z as D,C as A,x as K,d
       <wui-flex class="networks">
         ${i?.map(n=>l`
             <wui-flex class="network-icon">
-              <wui-image src=${m(F.getNetworkImage(n))}></wui-image>
+              <wui-image src=${m(X.getNetworkImage(n))}></wui-image>
             </wui-flex>
           `)}
       </wui-flex>
@@ -129,7 +129,7 @@ import{c as w,H as c,n as z,m,_ as l,X as L,j as q,e as U,Z as D,C as A,x as K,d
             ?disabled=${!e.url}
             data-testid=${`onramp-provider-${e.name}`}
           ></w3m-onramp-provider-item>
-        `)}onClickProvider(e){var t;c.setSelectedProvider(e),D.push("BuyInProgress"),L.openHref(((t=c.state.selectedProvider)==null?void 0:t.url)||e.url,"popupWindow","width=600,height=800,scrollbars=yes"),K.sendEvent({type:"track",event:"SELECT_BUY_PROVIDER",properties:{provider:e.name,isSmartAccount:V(A.state.activeChain)===X.ACCOUNT_TYPES.SMART_ACCOUNT}})}};W([u()],S.prototype,"providers",void 0);S=W([b("w3m-onramp-providers-view")],S);const Q=I`
+        `)}onClickProvider(e){var t;c.setSelectedProvider(e),D.push("BuyInProgress"),L.openHref(((t=c.state.selectedProvider)==null?void 0:t.url)||e.url,"popupWindow","width=600,height=800,scrollbars=yes"),K.sendEvent({type:"track",event:"SELECT_BUY_PROVIDER",properties:{provider:e.name,isSmartAccount:V(A.state.activeChain)===F.ACCOUNT_TYPES.SMART_ACCOUNT}})}};W([u()],S.prototype,"providers",void 0);S=W([b("w3m-onramp-providers-view")],S);const Q=I`
   :host > wui-grid {
     max-height: 360px;
     overflow: auto;
