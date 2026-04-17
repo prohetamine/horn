@@ -1,4 +1,4 @@
-import{c as k,_ as c,q as M,h as l,X as D,C as w,b as h,B as N,f as y,D as V,K as z,v as Z,n as j,i as G,E as Q,G as q,k as v,P as d,J as u,m as K,L as Y,d as F,l as L,$ as H,y as X,o as x}from"./index-ClrMGoCy.js";import"./index-D2apariV-CRmzxLCb.js";import"./index-Bdf55gPm-CUGSsxKI.js";import{a as J}from"./SwapController-ZhAftJtk-BFmdkQC7.js";const ee=v`
+import{c as k,_ as c,q as M,f as l,X as D,C as w,Z as h,D as N,e as y,E as V,K as z,x as Z,n as j,z as Q,F as X,O as q,I as v,l as d,J as u,i as K,k as Y,a as F,b as L,A as H,m as G,o as x}from"./index-10ZnU3Az.js";import"./index-BELkox9w-Dx9n4JfB.js";import"./index-BhxZMwG4-gXYNAqr2.js";import{a as J}from"./SwapController-C7f4Tbbl-BAbdrzNZ.js";const ee=v`
   :host {
     width: 100%;
     height: 100px;
@@ -265,7 +265,7 @@ ${this.value??""}</textarea
       >
         ${this.message}
       </wui-button>
-    </wui-flex>`}async handleSendParameters(){if(this.loading=!0,!this.params){this.loading=!1;return}const e=Number(this.params.amount);if(isNaN(e)){y.showError("Invalid amount"),this.loading=!1;return}const{namespace:t,chainId:n,assetAddress:o}=this.params;if(!G.SEND_PARAMS_SUPPORTED_CHAINS.includes(t)){y.showError(`Chain "${t}" is not supported for send parameters`),this.loading=!1;return}const r=w.getCaipNetworkById(n,t);if(!r){y.showError(`Network with id "${n}" not found`),this.loading=!1;return}try{const{balance:i,name:s,symbol:a,decimals:U}=await Q.fetchERC20Balance({caipAddress:this.caipAddress,assetAddress:o,caipNetwork:r});if(!s||!a||!U||!i){y.showError("Token not found");return}l.setToken({name:s,symbol:a,chainId:r.id.toString(),address:`${r.chainNamespace}:${r.id}:${o}`,value:0,price:0,quantity:{decimals:U.toString(),numeric:i.toString()},iconUrl:q.getTokenImage(a)??""}),l.setTokenAmount(e),l.setReceiverAddress(this.params.to)}catch(i){console.error("Failed to load token information:",i),y.showError("Failed to load token information")}finally{this.loading=!1}}};p.styles=ie;g([u()],p.prototype,"token",void 0);g([u()],p.prototype,"sendTokenAmount",void 0);g([u()],p.prototype,"receiverAddress",void 0);g([u()],p.prototype,"receiverProfileName",void 0);g([u()],p.prototype,"loading",void 0);g([u()],p.prototype,"params",void 0);g([u()],p.prototype,"caipAddress",void 0);g([u()],p.prototype,"message",void 0);g([u()],p.prototype,"disconnecting",void 0);p=g([x("w3m-wallet-send-view")],p);const ne=v`
+    </wui-flex>`}async handleSendParameters(){if(this.loading=!0,!this.params){this.loading=!1;return}const e=Number(this.params.amount);if(isNaN(e)){y.showError("Invalid amount"),this.loading=!1;return}const{namespace:t,chainId:n,assetAddress:o}=this.params;if(!Q.SEND_PARAMS_SUPPORTED_CHAINS.includes(t)){y.showError(`Chain "${t}" is not supported for send parameters`),this.loading=!1;return}const r=w.getCaipNetworkById(n,t);if(!r){y.showError(`Network with id "${n}" not found`),this.loading=!1;return}try{const{balance:i,name:s,symbol:a,decimals:U}=await X.fetchERC20Balance({caipAddress:this.caipAddress,assetAddress:o,caipNetwork:r});if(!s||!a||!U||!i){y.showError("Token not found");return}l.setToken({name:s,symbol:a,chainId:r.id.toString(),address:`${r.chainNamespace}:${r.id}:${o}`,value:0,price:0,quantity:{decimals:U.toString(),numeric:i.toString()},iconUrl:q.getTokenImage(a)??""}),l.setTokenAmount(e),l.setReceiverAddress(this.params.to)}catch(i){console.error("Failed to load token information:",i),y.showError("Failed to load token information")}finally{this.loading=!1}}};p.styles=ie;g([u()],p.prototype,"token",void 0);g([u()],p.prototype,"sendTokenAmount",void 0);g([u()],p.prototype,"receiverAddress",void 0);g([u()],p.prototype,"receiverProfileName",void 0);g([u()],p.prototype,"loading",void 0);g([u()],p.prototype,"params",void 0);g([u()],p.prototype,"caipAddress",void 0);g([u()],p.prototype,"message",void 0);g([u()],p.prototype,"disconnecting",void 0);p=g([x("w3m-wallet-send-view")],p);const ne=v`
   .contentContainer {
     height: 440px;
     overflow: scroll;
@@ -443,7 +443,7 @@ ${this.value??""}</textarea
         @click=${()=>this.onNetworkClick(this.caipNetwork)}
         class="network"
         textTitle="Network"
-        imageSrc=${X(q.getNetworkImage(this.caipNetwork))}
+        imageSrc=${G(q.getNetworkImage(this.caipNetwork))}
       ></wui-list-content>`:null}onNetworkClick(e){e&&!this.params&&h.push("Networks",{network:e})}};S.styles=se;_([d()],S.prototype,"receiverAddress",void 0);_([d({type:Object})],S.prototype,"caipNetwork",void 0);_([u()],S.prototype,"params",void 0);S=_([x("w3m-wallet-send-details")],S);const ae=v`
   wui-avatar,
   wui-image {

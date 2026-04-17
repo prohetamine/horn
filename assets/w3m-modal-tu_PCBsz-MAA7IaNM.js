@@ -1,4 +1,4 @@
-import{c as b,v as M,b as c,a1 as pe,y as k,_ as d,a as P,q as v,C as g,Y as _,R as j,t as D,O as te,W as me,B as ne,a2 as ge,f as W,a3 as se,n as we,k as f,m as F,P as l,J as u,L as be,j as fe,F as L,G as Y,N as ye,p as X,o as m}from"./index-ClrMGoCy.js";import{u as B}from"./index-CA8dbl9V-BIZbt7oW.js";import{a as ve}from"./SwapController-ZhAftJtk-BFmdkQC7.js";const le={isUnsupportedChainView(){return c.state.view==="UnsupportedChain"||c.state.view==="SwitchNetwork"&&c.state.history.includes("UnsupportedChain")},async safeClose(){if(this.isUnsupportedChainView()){v.shake();return}if(await se.isSIWXCloseDisabled()){v.shake();return}(c.state.view==="DataCapture"||c.state.view==="DataCaptureOtpConfirm")&&we.disconnect(),v.close()}},ke=f`
+import{c as b,x as M,Z as c,a1 as pe,m as k,_ as d,V as P,q as v,C as g,Y as _,S as j,u as D,R as te,j as me,D as ne,a2 as ge,e as W,a3 as se,n as we,I as f,i as F,l,J as u,k as be,g as fe,M as L,O as Y,P as ye,w as X,o as m}from"./index-10ZnU3Az.js";import{u as B}from"./index-DXYDV6jA-BrlKcsp_.js";import{a as ve}from"./SwapController-C7f4Tbbl-BAbdrzNZ.js";const le={isUnsupportedChainView(){return c.state.view==="UnsupportedChain"||c.state.view==="SwitchNetwork"&&c.state.history.includes("UnsupportedChain")},async safeClose(){if(this.isUnsupportedChainView()){v.shake();return}if(await se.isSIWXCloseDisabled()){v.shake();return}(c.state.view==="DataCapture"||c.state.view==="DataCaptureOtpConfirm")&&we.disconnect(),v.close()}},ke=f`
   :host {
     display: block;
     border-radius: clamp(0px, ${({borderRadius:e})=>e[8]}, 44px);
@@ -249,7 +249,7 @@ import{c as b,v as M,b as c,a1 as pe,y as k,_ as d,a as P,q as v,C as g,Y as _,R
     border: 1px solid ${({tokens:e})=>e.theme.foregroundSecondary};
     border-radius: ${({borderRadius:e})=>e[4]};
   }
-`;var J=function(e,t,i,r){var a=arguments.length,o=a<3?t:r,n;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(e,t,i,r);else for(var s=e.length-1;s>=0;s--)(n=e[s])&&(o=(a<3?n(o):a>3?n(t,i,o):n(t,i))||o);return a>3&&o&&Object.defineProperty(t,i,o),o};let z=class extends b{constructor(){super(),this.unsubscribe=[],this.paymentAsset=B.state.paymentAsset,this.amount=B.state.amount,this.unsubscribe.push(B.subscribeKey("paymentAsset",e=>{this.paymentAsset=e}),B.subscribeKey("amount",e=>{this.amount=e}))}disconnectedCallback(){this.unsubscribe.forEach(e=>e())}render(){const e=g.getAllRequestedCaipNetworks().find(t=>t.caipNetworkId===this.paymentAsset.network);return d`<wui-flex
+`;var Z=function(e,t,i,r){var a=arguments.length,o=a<3?t:r,n;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(e,t,i,r);else for(var s=e.length-1;s>=0;s--)(n=e[s])&&(o=(a<3?n(o):a>3?n(t,i,o):n(t,i))||o);return a>3&&o&&Object.defineProperty(t,i,o),o};let z=class extends b{constructor(){super(),this.unsubscribe=[],this.paymentAsset=B.state.paymentAsset,this.amount=B.state.amount,this.unsubscribe.push(B.subscribeKey("paymentAsset",e=>{this.paymentAsset=e}),B.subscribeKey("amount",e=>{this.amount=e}))}disconnectedCallback(){this.unsubscribe.forEach(e=>e())}render(){const e=g.getAllRequestedCaipNetworks().find(t=>t.caipNetworkId===this.paymentAsset.network);return d`<wui-flex
       alignItems="center"
       gap="1"
       .padding=${["1","2","1","1"]}
@@ -262,7 +262,7 @@ import{c as b,v as M,b as c,a1 as pe,y as k,_ as d,a as P,q as v,C as g,Y as _,R
       <wui-text variant="sm-regular" color="secondary">
         on ${e?.name??"Unknown"}
       </wui-text>
-    </wui-flex>`}};z.styles=[Ae];J([l()],z.prototype,"paymentAsset",void 0);J([l()],z.prototype,"amount",void 0);z=J([m("w3m-pay-header")],z);const Ee=f`
+    </wui-flex>`}};z.styles=[Ae];Z([l()],z.prototype,"paymentAsset",void 0);Z([l()],z.prototype,"amount",void 0);z=Z([m("w3m-pay-header")],z);const Ee=f`
   :host {
     height: 60px;
   }
@@ -438,7 +438,7 @@ import{c as b,v as M,b as c,a1 as pe,y as k,_ as d,a as P,q as v,C as g,Y as _,R
     background-color: ${({tokens:e})=>e.core.foregroundAccent010};
     border-radius: ${({borderRadius:e})=>e.round} !important;
   }
-`;var Z=function(e,t,i,r){var a=arguments.length,o=a<3?t:r,n;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(e,t,i,r);else for(var s=e.length-1;s>=0;s--)(n=e[s])&&(o=(a<3?n(o):a>3?n(t,i,o):n(t,i))||o);return a>3&&o&&Object.defineProperty(t,i,o),o};let O=class extends b{constructor(){super(...arguments),this.message="",this.variant="success"}render(){return d`
+`;var J=function(e,t,i,r){var a=arguments.length,o=a<3?t:r,n;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(e,t,i,r);else for(var s=e.length-1;s>=0;s--)(n=e[s])&&(o=(a<3?n(o):a>3?n(t,i,o):n(t,i))||o);return a>3&&o&&Object.defineProperty(t,i,o),o};let O=class extends b{constructor(){super(...arguments),this.message="",this.variant="success"}render(){return d`
       ${this.templateIcon()}
       <wui-text variant="lg-regular" color="primary" data-testid="wui-snackbar-message"
         >${this.message}</wui-text
@@ -447,7 +447,7 @@ import{c as b,v as M,b as c,a1 as pe,y as k,_ as d,a as P,q as v,C as g,Y as _,R
       size="md"
       color=${e[this.variant]}
       icon=${t[this.variant]}
-    ></wui-icon-box>`}};O.styles=[F,Oe];Z([l()],O.prototype,"message",void 0);Z([l()],O.prototype,"variant",void 0);O=Z([m("wui-snackbar")],O);const Te=fe`
+    ></wui-icon-box>`}};O.styles=[F,Oe];J([l()],O.prototype,"message",void 0);J([l()],O.prototype,"variant",void 0);O=J([m("wui-snackbar")],O);const Te=fe`
   :host {
     display: block;
     position: absolute;

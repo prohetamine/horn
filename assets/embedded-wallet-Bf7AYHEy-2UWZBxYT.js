@@ -1,4 +1,4 @@
-import{c as f,q as j,a as L,_ as c,Y as T,W as M,Z as H,X as z,u as q,b as G,d as X,M as x,C as h,O as N,l as Z,z as I,v as O,e as S,U as g,f as J,g as V,n as Q,h as ee,i as _,j as W,J as d,k as E,m as D,L as F,P as l,y as te,o as w}from"./index-ClrMGoCy.js";const oe=W`
+import{c as f,q as j,V as L,_ as c,Y as T,j as V,G as H,X as z,h as G,Z as q,a as X,L as x,C as h,R as N,b as Z,W as P,x as _,d as S,U as g,e as J,N as M,n as Q,f as ee,z as O,g as W,J as l,I as E,i as D,k as F,l as d,m as te,o as w}from"./index-10ZnU3Az.js";const oe=W`
   div {
     width: 100%;
   }
@@ -12,7 +12,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,W as M,Z as H,X as z,u as q,b as G,d a
       transform: translateY(-50px);
     }
   }
-`;var K=function(e,t,i,s){var r=arguments.length,o=r<3?t:s,n;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(e,t,i,s);else for(var a=e.length-1;a>=0;a--)(n=e[a])&&(o=(r<3?n(o):r>3?n(t,i,o):n(t,i))||o);return r>3&&o&&Object.defineProperty(t,i,o),o};const P=600,Y=360,ie=64;let C=class extends f{constructor(){super(),this.bodyObserver=void 0,this.unsubscribe=[],this.iframe=document.getElementById("w3m-iframe"),this.ready=!1,this.unsubscribe.push(j.subscribeKey("open",e=>{e||this.onHideIframe()}),j.subscribeKey("shake",e=>{e?this.iframe.style.animation="w3m-shake 500ms var(--apkt-easings-ease-out-power-2)":this.iframe.style.animation="none"}))}disconnectedCallback(){var e;this.onHideIframe(),this.unsubscribe.forEach(t=>t()),(e=this.bodyObserver)==null||e.unobserve(window.document.body)}async firstUpdated(){var e;await this.syncTheme(),this.iframe.style.display="block";const t=(e=this==null?void 0:this.renderRoot)==null?void 0:e.querySelector("div");this.bodyObserver=new ResizeObserver(i=>{var s,r;const o=(s=i?.[0])==null?void 0:s.contentBoxSize,n=(r=o?.[0])==null?void 0:r.inlineSize;this.iframe.style.height=`${P}px`,t.style.height=`${P}px`,L.state.enableEmbedded?this.updateFrameSizeForEmbeddedMode():n&&n<=430?(this.iframe.style.width="100%",this.iframe.style.left="0px",this.iframe.style.bottom="0px",this.iframe.style.top="unset",this.onShowIframe()):(this.iframe.style.width=`${Y}px`,this.iframe.style.left=`calc(50% - ${Y/2}px)`,this.iframe.style.top=`calc(50% - ${P/2}px + ${ie/2}px)`,this.iframe.style.bottom="unset",this.onShowIframe())}),this.bodyObserver.observe(window.document.body)}render(){return c`<div data-ready=${this.ready} id="w3m-frame-container"></div>`}onShowIframe(){const e=window.innerWidth<=430;this.ready=!0,this.iframe.style.animation=e?"w3m-iframe-zoom-in-mobile 200ms var(--apkt-easings-ease-out-power-2)":"w3m-iframe-zoom-in 200ms var(--apkt-easings-ease-out-power-2)"}onHideIframe(){this.iframe.style.display="none",this.iframe.style.animation="w3m-iframe-fade-out 200ms var(--apkt-easings-ease-out-power-2)"}async syncTheme(){const e=T.getAuthConnector();if(e){const t=M.getSnapshot().themeMode,i=M.getSnapshot().themeVariables;await e.provider.syncTheme({themeVariables:i,w3mThemeVariables:H(i,t)})}}async updateFrameSizeForEmbeddedMode(){var e;const t=(e=this==null?void 0:this.renderRoot)==null?void 0:e.querySelector("div");await new Promise(s=>{setTimeout(s,300)});const i=this.getBoundingClientRect();t.style.width="100%",this.iframe.style.left=`${i.left}px`,this.iframe.style.top=`${i.top}px`,this.iframe.style.width=`${i.width}px`,this.iframe.style.height=`${i.height}px`,this.onShowIframe()}};C.styles=oe;K([d()],C.prototype,"ready",void 0);C=K([w("w3m-approve-transaction-view")],C);const re=E`
+`;var K=function(e,t,i,s){var r=arguments.length,o=r<3?t:s,n;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(e,t,i,s);else for(var a=e.length-1;a>=0;a--)(n=e[a])&&(o=(r<3?n(o):r>3?n(t,i,o):n(t,i))||o);return r>3&&o&&Object.defineProperty(t,i,o),o};const I=600,Y=360,ie=64;let C=class extends f{constructor(){super(),this.bodyObserver=void 0,this.unsubscribe=[],this.iframe=document.getElementById("w3m-iframe"),this.ready=!1,this.unsubscribe.push(j.subscribeKey("open",e=>{e||this.onHideIframe()}),j.subscribeKey("shake",e=>{e?this.iframe.style.animation="w3m-shake 500ms var(--apkt-easings-ease-out-power-2)":this.iframe.style.animation="none"}))}disconnectedCallback(){var e;this.onHideIframe(),this.unsubscribe.forEach(t=>t()),(e=this.bodyObserver)==null||e.unobserve(window.document.body)}async firstUpdated(){var e;await this.syncTheme(),this.iframe.style.display="block";const t=(e=this==null?void 0:this.renderRoot)==null?void 0:e.querySelector("div");this.bodyObserver=new ResizeObserver(i=>{var s,r;const o=(s=i?.[0])==null?void 0:s.contentBoxSize,n=(r=o?.[0])==null?void 0:r.inlineSize;this.iframe.style.height=`${I}px`,t.style.height=`${I}px`,L.state.enableEmbedded?this.updateFrameSizeForEmbeddedMode():n&&n<=430?(this.iframe.style.width="100%",this.iframe.style.left="0px",this.iframe.style.bottom="0px",this.iframe.style.top="unset",this.onShowIframe()):(this.iframe.style.width=`${Y}px`,this.iframe.style.left=`calc(50% - ${Y/2}px)`,this.iframe.style.top=`calc(50% - ${I/2}px + ${ie/2}px)`,this.iframe.style.bottom="unset",this.onShowIframe())}),this.bodyObserver.observe(window.document.body)}render(){return c`<div data-ready=${this.ready} id="w3m-frame-container"></div>`}onShowIframe(){const e=window.innerWidth<=430;this.ready=!0,this.iframe.style.animation=e?"w3m-iframe-zoom-in-mobile 200ms var(--apkt-easings-ease-out-power-2)":"w3m-iframe-zoom-in 200ms var(--apkt-easings-ease-out-power-2)"}onHideIframe(){this.iframe.style.display="none",this.iframe.style.animation="w3m-iframe-fade-out 200ms var(--apkt-easings-ease-out-power-2)"}async syncTheme(){const e=T.getAuthConnector();if(e){const t=V.getSnapshot().themeMode,i=V.getSnapshot().themeVariables;await e.provider.syncTheme({themeVariables:i,w3mThemeVariables:H(i,t)})}}async updateFrameSizeForEmbeddedMode(){var e;const t=(e=this==null?void 0:this.renderRoot)==null?void 0:e.querySelector("div");await new Promise(s=>{setTimeout(s,300)});const i=this.getBoundingClientRect();t.style.width="100%",this.iframe.style.left=`${i.left}px`,this.iframe.style.top=`${i.top}px`,this.iframe.style.width=`${i.width}px`,this.iframe.style.height=`${i.height}px`,this.onShowIframe()}};C.styles=oe;K([l()],C.prototype,"ready",void 0);C=K([w("w3m-approve-transaction-view")],C);const re=E`
   a {
     border: none;
     border-radius: ${({borderRadius:e})=>e[20]};
@@ -149,15 +149,15 @@ import{c as f,q as j,a as L,_ as c,Y as T,W as M,Z as H,X as z,u as q,b as G,d a
       color="inherit"
       size="inherit"
       class="image-icon"
-    ></wui-icon>`}};u.styles=[D,F,re];y([l()],u.prototype,"type",void 0);y([l()],u.prototype,"size",void 0);y([l()],u.prototype,"imageSrc",void 0);y([l({type:Boolean})],u.prototype,"disabled",void 0);y([l()],u.prototype,"href",void 0);y([l()],u.prototype,"text",void 0);u=y([w("wui-semantic-chip")],u);var ae=function(e,t,i,s){var r=arguments.length,o=r<3?t:s===null?s=Object.getOwnPropertyDescriptor(t,i):s,n;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(e,t,i,s);else for(var a=e.length-1;a>=0;a--)(n=e[a])&&(o=(r<3?n(o):r>3?n(t,i,o):n(t,i))||o);return r>3&&o&&Object.defineProperty(t,i,o),o};let B=class extends f{render(){return c`
+    ></wui-icon>`}};u.styles=[D,F,re];y([d()],u.prototype,"type",void 0);y([d()],u.prototype,"size",void 0);y([d()],u.prototype,"imageSrc",void 0);y([d({type:Boolean})],u.prototype,"disabled",void 0);y([d()],u.prototype,"href",void 0);y([d()],u.prototype,"text",void 0);u=y([w("wui-semantic-chip")],u);var ae=function(e,t,i,s){var r=arguments.length,o=r<3?t:s===null?s=Object.getOwnPropertyDescriptor(t,i):s,n;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")o=Reflect.decorate(e,t,i,s);else for(var a=e.length-1;a>=0;a--)(n=e[a])&&(o=(r<3?n(o):r>3?n(t,i,o):n(t,i))||o);return r>3&&o&&Object.defineProperty(t,i,o),o};let B=class extends f{render(){return c`
       <wui-flex flexDirection="column" alignItems="center" gap="5" padding="5">
         <wui-text variant="md-regular" color="primary">Follow the instructions on</wui-text>
         <wui-semantic-chip
           icon="externalLink"
           variant="fill"
-          text=${_.SECURE_SITE_DASHBOARD}
-          href=${_.SECURE_SITE_DASHBOARD}
-          imageSrc=${_.SECURE_SITE_FAVICON}
+          text=${O.SECURE_SITE_DASHBOARD}
+          href=${O.SECURE_SITE_DASHBOARD}
+          imageSrc=${O.SECURE_SITE_FAVICON}
           data-testid="w3m-secure-website-button"
         >
         </wui-semantic-chip>
@@ -183,7 +183,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,W as M,Z as H,X as z,u as q,b as G,d a
           >
         </wui-list-item>
       </w3m-tooltip-trigger>
-    `}isV6(){return(V.get("dapp_smart_account_version")||"v6")==="v6"}toggleSmartAccountVersion(){var e;V.set("dapp_smart_account_version",this.isV6()?"v7":"v6"),typeof window<"u"&&((e=window?.location)==null||e.reload())}togglePreferredAccountTypeTemplate(){var e;const t=(e=this.network)==null?void 0:e.chainNamespace,i=h.checkIfSmartAccountEnabled(),s=T.getConnectorId(t);return!T.getAuthConnector()||s!==I.CONNECTOR_ID.AUTH||!i?null:(this.switched||(this.text=S(t)===g.ACCOUNT_TYPES.SMART_ACCOUNT?"Switch to your EOA":"Switch to your Smart Account"),c`
+    `}isV6(){return(M.get("dapp_smart_account_version")||"v6")==="v6"}toggleSmartAccountVersion(){var e;M.set("dapp_smart_account_version",this.isV6()?"v7":"v6"),typeof window<"u"&&((e=window?.location)==null||e.reload())}togglePreferredAccountTypeTemplate(){var e;const t=(e=this.network)==null?void 0:e.chainNamespace,i=h.checkIfSmartAccountEnabled(),s=T.getConnectorId(t);return!T.getAuthConnector()||s!==P.CONNECTOR_ID.AUTH||!i?null:(this.switched||(this.text=S(t)===g.ACCOUNT_TYPES.SMART_ACCOUNT?"Switch to your EOA":"Switch to your Smart Account"),c`
       <wui-list-item
         icon="swapHorizontal"
         ?rounded=${!0}
@@ -194,7 +194,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,W as M,Z as H,X as z,u as q,b as G,d a
       >
         <wui-text variant="lg-regular" color="primary">${this.text}</wui-text>
       </wui-list-item>
-    `)}async changePreferredAccountType(){var e;const t=(e=this.network)==null?void 0:e.chainNamespace,i=h.checkIfSmartAccountEnabled(),s=S(t)===g.ACCOUNT_TYPES.SMART_ACCOUNT||!i?g.ACCOUNT_TYPES.EOA:g.ACCOUNT_TYPES.SMART_ACCOUNT;T.getAuthConnector()&&(this.loading=!0,await Q.setPreferredAccountType(s,t),this.text=s===g.ACCOUNT_TYPES.SMART_ACCOUNT?"Switch to your EOA":"Switch to your Smart Account",this.switched=!0,ee.resetSend(),this.loading=!1,this.requestUpdate())}};A([d()],$.prototype,"loading",void 0);A([d()],$.prototype,"switched",void 0);A([d()],$.prototype,"text",void 0);A([d()],$.prototype,"network",void 0);$=A([w("w3m-smart-account-settings-view")],$);const ce=E`
+    `)}async changePreferredAccountType(){var e;const t=(e=this.network)==null?void 0:e.chainNamespace,i=h.checkIfSmartAccountEnabled(),s=S(t)===g.ACCOUNT_TYPES.SMART_ACCOUNT||!i?g.ACCOUNT_TYPES.EOA:g.ACCOUNT_TYPES.SMART_ACCOUNT;T.getAuthConnector()&&(this.loading=!0,await Q.setPreferredAccountType(s,t),this.text=s===g.ACCOUNT_TYPES.SMART_ACCOUNT?"Switch to your EOA":"Switch to your Smart Account",this.switched=!0,ee.resetSend(),this.loading=!1,this.requestUpdate())}};A([l()],$.prototype,"loading",void 0);A([l()],$.prototype,"switched",void 0);A([l()],$.prototype,"text",void 0);A([l()],$.prototype,"network",void 0);$=A([w("w3m-smart-account-settings-view")],$);const ce=E`
   :host {
     width: 100%;
   }
@@ -238,7 +238,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,W as M,Z as H,X as z,u as q,b as G,d a
         <wui-text class="name" color="primary" variant="md-regular">${this.name}</wui-text>
         ${this.templateRightContent()}
       </button>
-    `}templateRightContent(){return this.loading?c`<wui-loading-spinner size="lg" color="primary"></wui-loading-spinner>`:this.registered?c`<wui-tag variant="info" size="sm">Registered</wui-tag>`:c`<wui-tag variant="success" size="sm">Available</wui-tag>`}};b.styles=[D,F,ce];R([l()],b.prototype,"name",void 0);R([l({type:Boolean})],b.prototype,"registered",void 0);R([l({type:Boolean})],b.prototype,"loading",void 0);R([l({type:Boolean})],b.prototype,"disabled",void 0);b=R([w("wui-account-name-suggestion-item")],b);const le=E`
+    `}templateRightContent(){return this.loading?c`<wui-loading-spinner size="lg" color="primary"></wui-loading-spinner>`:this.registered?c`<wui-tag variant="info" size="sm">Registered</wui-tag>`:c`<wui-tag variant="success" size="sm">Available</wui-tag>`}};b.styles=[D,F,ce];R([d()],b.prototype,"name",void 0);R([d({type:Boolean})],b.prototype,"registered",void 0);R([d({type:Boolean})],b.prototype,"loading",void 0);R([d({type:Boolean})],b.prototype,"disabled",void 0);b=R([w("wui-account-name-suggestion-item")],b);const de=E`
   :host {
     position: relative;
     width: 100%;
@@ -270,7 +270,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,W as M,Z as H,X as z,u as q,b as G,d a
         inputRightPadding="5xl"
         .onKeyDown=${this.onKeyDown}
       ></wui-input-text>
-    `}};m.styles=[D,le];k([l()],m.prototype,"errorMessage",void 0);k([l({type:Boolean})],m.prototype,"disabled",void 0);k([l()],m.prototype,"value",void 0);k([l({type:Boolean})],m.prototype,"loading",void 0);k([l({attribute:!1})],m.prototype,"onKeyDown",void 0);m=k([w("wui-ens-input")],m);const de=E`
+    `}};m.styles=[D,de];k([d()],m.prototype,"errorMessage",void 0);k([d({type:Boolean})],m.prototype,"disabled",void 0);k([d()],m.prototype,"value",void 0);k([d({type:Boolean})],m.prototype,"loading",void 0);k([d({attribute:!1})],m.prototype,"onKeyDown",void 0);m=k([w("wui-ens-input")],m);const le=E`
   wui-flex {
     width: 100%;
   }
@@ -344,7 +344,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,W as M,Z as H,X as z,u as q,b as G,d a
     `}submitButtonTemplate(){const e=this.suggestions.find(i=>{var s,r;return((r=(s=i.name)==null?void 0:s.split("."))==null?void 0:r[0])===this.name&&i.registered});if(this.loading)return c`<wui-loading-spinner
         class="input-loading-spinner"
         color="secondary"
-      ></wui-loading-spinner>`;const t=`${this.name}${I.WC_NAME_SUFFIX}`;return c`
+      ></wui-loading-spinner>`;const t=`${this.name}${P.WC_NAME_SUFFIX}`;return c`
       <wui-icon-link
         ?disabled=${!!e}
         class="input-submit-button"
@@ -363,7 +363,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,W as M,Z as H,X as z,u as q,b as G,d a
             data-testid="account-name-suggestion"
             @click=${()=>this.onSubmitName(e.name)}
           ></wui-account-name-suggestion-item>`)}
-    </wui-flex>`}isAllowedToSubmit(e){var t;const i=(t=e.split("."))==null?void 0:t[0],s=this.suggestions.find(r=>{var o,n;return((n=(o=r.name)==null?void 0:o.split("."))==null?void 0:n[0])===i&&r.registered});return!this.loading&&!this.error&&!this.profileName&&i&&x.validateName(i)&&!s}async onSubmitName(e){try{if(!this.isAllowedToSubmit(e))return;O.sendEvent({type:"track",event:"REGISTER_NAME_INITIATED",properties:{isSmartAccount:S(h.state.activeChain)===g.ACCOUNT_TYPES.SMART_ACCOUNT,ensName:e}}),await x.registerName(e),O.sendEvent({type:"track",event:"REGISTER_NAME_SUCCESS",properties:{isSmartAccount:S(h.state.activeChain)===g.ACCOUNT_TYPES.SMART_ACCOUNT,ensName:e}})}catch(t){J.showError(t.message),O.sendEvent({type:"track",event:"REGISTER_NAME_ERROR",properties:{isSmartAccount:S(h.state.activeChain)===g.ACCOUNT_TYPES.SMART_ACCOUNT,ensName:e,error:z.parseError(t)}})}}onEnterKey(e){if(e.key==="Enter"&&this.name&&this.isAllowedToSubmit(this.name)){const t=`${this.name}${I.WC_NAME_SUFFIX}`;this.onSubmitName(t)}}};p.styles=de;v([l()],p.prototype,"errorMessage",void 0);v([d()],p.prototype,"name",void 0);v([d()],p.prototype,"error",void 0);v([d()],p.prototype,"loading",void 0);v([d()],p.prototype,"suggestions",void 0);v([d()],p.prototype,"profileName",void 0);p=v([w("w3m-register-account-name-view")],p);const ue=W`
+    </wui-flex>`}isAllowedToSubmit(e){var t;const i=(t=e.split("."))==null?void 0:t[0],s=this.suggestions.find(r=>{var o,n;return((n=(o=r.name)==null?void 0:o.split("."))==null?void 0:n[0])===i&&r.registered});return!this.loading&&!this.error&&!this.profileName&&i&&x.validateName(i)&&!s}async onSubmitName(e){try{if(!this.isAllowedToSubmit(e))return;_.sendEvent({type:"track",event:"REGISTER_NAME_INITIATED",properties:{isSmartAccount:S(h.state.activeChain)===g.ACCOUNT_TYPES.SMART_ACCOUNT,ensName:e}}),await x.registerName(e),_.sendEvent({type:"track",event:"REGISTER_NAME_SUCCESS",properties:{isSmartAccount:S(h.state.activeChain)===g.ACCOUNT_TYPES.SMART_ACCOUNT,ensName:e}})}catch(t){J.showError(t.message),_.sendEvent({type:"track",event:"REGISTER_NAME_ERROR",properties:{isSmartAccount:S(h.state.activeChain)===g.ACCOUNT_TYPES.SMART_ACCOUNT,ensName:e,error:z.parseError(t)}})}}onEnterKey(e){if(e.key==="Enter"&&this.name&&this.isAllowedToSubmit(this.name)){const t=`${this.name}${P.WC_NAME_SUFFIX}`;this.onSubmitName(t)}}};p.styles=le;v([d()],p.prototype,"errorMessage",void 0);v([l()],p.prototype,"name",void 0);v([l()],p.prototype,"error",void 0);v([l()],p.prototype,"loading",void 0);v([l()],p.prototype,"suggestions",void 0);v([l()],p.prototype,"profileName",void 0);p=v([w("w3m-register-account-name-view")],p);const ue=W`
   .continue-button-container {
     width: 100%;
   }
@@ -376,7 +376,7 @@ import{c as f,q as j,a as L,_ as c,Y as T,W as M,Z as H,X as z,u as q,b as G,d a
       >
         ${this.onboardingTemplate()} ${this.buttonsTemplate()}
         <wui-link
-          @click=${()=>{z.openHref(q.URLS.FAQ,"_blank")}}
+          @click=${()=>{z.openHref(G.URLS.FAQ,"_blank")}}
         >
           Learn more
           <wui-icon color="inherit" slot="iconRight" name="externalLink"></wui-icon>
@@ -407,4 +407,4 @@ import{c as f,q as j,a as L,_ as c,Y as T,W as M,Z as H,X as z,u as q,b as G,d a
       <wui-button fullWidth size="lg" borderRadius="xs" @click=${this.redirectToAccount.bind(this)}
         >Let's Go!
       </wui-button>
-    </wui-flex>`}redirectToAccount(){G.replace("Account")}};U.styles=ue;U=pe([w("w3m-register-account-name-success-view")],U);export{C as W3mApproveTransactionView,U as W3mRegisterAccountNameSuccess,p as W3mRegisterAccountNameView,$ as W3mSmartAccountSettingsView,B as W3mUpgradeWalletView};
+    </wui-flex>`}redirectToAccount(){q.replace("Account")}};U.styles=ue;U=pe([w("w3m-register-account-name-success-view")],U);export{C as W3mApproveTransactionView,U as W3mRegisterAccountNameSuccess,p as W3mRegisterAccountNameView,$ as W3mSmartAccountSettingsView,B as W3mUpgradeWalletView};

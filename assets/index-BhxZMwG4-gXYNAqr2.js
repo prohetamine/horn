@@ -1,4 +1,4 @@
-import{k as l,m as u,L as m,P as n,c as p,_ as a,o as x}from"./index-ClrMGoCy.js";const b=l`
+import{I as l,i as u,k as m,l as n,c as p,_ as o,o as x}from"./index-10ZnU3Az.js";const b=l`
   button {
     display: block;
     display: flex;
@@ -121,18 +121,18 @@ import{k as l,m as u,L as m,P as n,c as p,_ as a,o as x}from"./index-ClrMGoCy.js
     background-color: ${({tokens:e})=>e.theme.foregroundSecondary};
     opacity: 0.5;
   }
-`;var o=function(e,r,s,h){var d=arguments.length,i=d<3?r:h,c;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")i=Reflect.decorate(e,r,s,h);else for(var g=e.length-1;g>=0;g--)(c=e[g])&&(i=(d<3?c(i):d>3?c(r,s,i):c(r,s))||i);return d>3&&i&&Object.defineProperty(r,s,i),i};const f={lg:"lg-regular",md:"lg-regular",sm:"md-regular"},w={lg:"lg",md:"md",sm:"sm"};let t=class extends p{constructor(){super(...arguments),this.size="md",this.disabled=!1,this.text="",this.loading=!1}render(){return this.loading?a` <wui-flex alignItems="center" gap="01" padding="01">
+`;var a=function(e,r,s,h){var d=arguments.length,i=d<3?r:h,c;if(typeof Reflect=="object"&&typeof Reflect.decorate=="function")i=Reflect.decorate(e,r,s,h);else for(var g=e.length-1;g>=0;g--)(c=e[g])&&(i=(d<3?c(i):d>3?c(r,s,i):c(r,s))||i);return d>3&&i&&Object.defineProperty(r,s,i),i};const f={lg:"lg-regular",md:"lg-regular",sm:"md-regular"},w={lg:"lg",md:"md",sm:"sm"};let t=class extends p{constructor(){super(...arguments),this.size="md",this.disabled=!1,this.text="",this.loading=!1}render(){return this.loading?o` <wui-flex alignItems="center" gap="01" padding="01">
         <wui-shimmer width="20px" height="20px"></wui-shimmer>
         <wui-shimmer width="32px" height="18px" borderRadius="4xs"></wui-shimmer>
-      </wui-flex>`:a`
+      </wui-flex>`:o`
       <button ?disabled=${this.disabled} data-size=${this.size}>
         ${this.imageTemplate()} ${this.textTemplate()}
       </button>
-    `}imageTemplate(){if(this.imageSrc&&this.chainImageSrc)return a`<wui-flex class="left-image-container">
+    `}imageTemplate(){if(this.imageSrc&&this.chainImageSrc)return o`<wui-flex class="left-image-container">
         <wui-image src=${this.imageSrc} class="token-image"></wui-image>
         <wui-image src=${this.chainImageSrc} class="chain-image"></wui-image>
-      </wui-flex>`;if(this.imageSrc)return a`<wui-image src=${this.imageSrc} class="token-image"></wui-image>`;const e=w[this.size];return a`<wui-flex class="left-icon-container">
+      </wui-flex>`;if(this.imageSrc)return o`<wui-image src=${this.imageSrc} class="token-image"></wui-image>`;const e=w[this.size];return o`<wui-flex class="left-icon-container">
       <wui-icon size=${e} name="networkPlaceholder"></wui-icon>
-    </wui-flex>`}textTemplate(){const e=f[this.size];return a`<wui-text color="primary" variant=${e}
+    </wui-flex>`}textTemplate(){const e=f[this.size];return o`<wui-text color="primary" variant=${e}
       >${this.text}</wui-text
-    >`}};t.styles=[u,m,b];o([n()],t.prototype,"size",void 0);o([n()],t.prototype,"imageSrc",void 0);o([n()],t.prototype,"chainImageSrc",void 0);o([n({type:Boolean})],t.prototype,"disabled",void 0);o([n()],t.prototype,"text",void 0);o([n({type:Boolean})],t.prototype,"loading",void 0);t=o([x("wui-token-button")],t);
+    >`}};t.styles=[u,m,b];a([n()],t.prototype,"size",void 0);a([n()],t.prototype,"imageSrc",void 0);a([n()],t.prototype,"chainImageSrc",void 0);a([n({type:Boolean})],t.prototype,"disabled",void 0);a([n()],t.prototype,"text",void 0);a([n({type:Boolean})],t.prototype,"loading",void 0);t=a([x("wui-token-button")],t);
