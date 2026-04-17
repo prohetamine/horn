@@ -225,7 +225,7 @@ const PollItem = ({ index, chainId, address, data: poll, copyId, onHidden }) => 
                     <ContextMenu 
                         isCert={isPay}
                         onOpen={() => navigate(`/poll/${encode([address, index, chainId, copyId])}?back=/dashboard/${copyId}`)}
-                        onCopyLink={() => copy(window.location.origin+`/horn/poll/${encode([poll.address, poll.index, poll.chainId, poll.copyId])}`)}
+                        onCopyLink={() => copy(window.location.origin+`/poll/${encode([poll.address, poll.index, poll.chainId, poll.copyId])}`)}
                         onShow={() => setShow(s => !s)}
                         onCertification={() => navigate(`/cert/${encode([id, stasCount, isOneNetwork])}?back=/dashboard/${copyId}`)}
                         onHidden={() => onHidden()}

@@ -378,7 +378,7 @@ const Poll = () => {
                                             return
                                         }
 
-                                        copy(window.location.origin+`/horn/poll/${encode([poll.address, poll.index, poll.chainId, poll.copyId])}`)
+                                        copy(window.location.origin+`/poll/${encode([poll.address, poll.index, poll.chainId, poll.copyId])}`)
                                     }} 
                                     icon={iconLink}
                                 >{lang.data.copy_link}</Button>
