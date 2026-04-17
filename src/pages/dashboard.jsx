@@ -26,6 +26,7 @@ const PollVariantItem = ({ variant: { colorIndex, iconIndex, title }, poll, inde
     const counter = Redstone.useCounter(`counter-${poll?.id}`, { 
         copyId: index, 
         stas: poll?.isPay, 
+        paymentAddress: poll?.address || '',
         once: poll?.isUnique,
         cache: 10 * 60000,
         interval: 10 * 60000,
