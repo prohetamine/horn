@@ -1,4 +1,4 @@
-import{c as k,_ as c,q as M,g as l,X as D,C as w,Z as h,B as N,f as y,D as V,K as z,x as Z,n as j,z as Q,E as X,O as q,I as v,l as d,J as u,i as K,k as Y,a as F,b as L,y as H,m as G,o as x}from"./index-jAabqxa2.js";import"./index-D-SIiv9m-ytM0BhK8.js";import"./index-C3Kbna9B-D_cBnCW7.js";import{a as J}from"./SwapController-DFlWWUd5-BxQb39lR.js";const ee=v`
+import{c as k,_ as c,q as M,f as l,X as D,C as w,Z as h,D as N,e as y,E as V,F as z,x as Z,n as j,z as Q,H as X,O as q,I as v,k as d,J as u,h as K,i as Y,a as F,b as H,A as L,l as G,o as x}from"./index-AkR3-efP.js";import"./index-DqdA3vx7-DHCuHClF.js";import"./index-wtsR8unG-BsnXneRm.js";import{a as J}from"./SwapController-BkqUnThF-BGjUJEVF.js";const ee=v`
   :host {
     width: 100%;
     height: 100px;
@@ -80,7 +80,7 @@ import{c as k,_ as c,q as M,g as l,X as D,C as w,Z as h,B as N,f as y,D as V,K a
       .padding=${["8","4","5","4"]}
     >
       <wui-text
-        ${L(this.instructionElementRef)}
+        ${H(this.instructionElementRef)}
         class="instruction"
         color="secondary"
         variant="md-medium"
@@ -101,7 +101,7 @@ import{c as k,_ as c,q as M,g as l,X as D,C as w,Z as h,B as N,f as y,D as V,K a
       <textarea
         spellcheck="false"
         ?disabled=${!this.instructionHidden}
-        ${L(this.inputElementRef)}
+        ${H(this.inputElementRef)}
         @input=${this.onInputChange.bind(this)}
         @blur=${this.onBlur.bind(this)}
         .value=${this.value??""}
@@ -179,7 +179,7 @@ ${this.value??""}</textarea
       @click=${this.handleSelectButtonClick.bind(this)}
       >Select token</wui-button
     >`}handleSelectButtonClick(){this.readOnly||h.push("WalletSendSelectToken")}sendValueTemplate(){if(!this.readOnly&&this.token&&this.sendTokenAmount){const e=this.token.price*this.sendTokenAmount;return c`<wui-text class="totalValue" variant="sm-regular" color="secondary"
-        >${e?`$${H.formatNumberToLocalString(e,2)}`:"Incorrect value"}</wui-text
+        >${e?`$${L.formatNumberToLocalString(e,2)}`:"Incorrect value"}</wui-text
       >`}return null}maxAmountTemplate(){return this.token?c` <wui-text variant="sm-regular" color="secondary">
         ${N.roundNumber(Number(this.token.quantity.numeric),6,5)}
       </wui-text>`:null}actionTemplate(){return this.token?c`<wui-link @click=${this.onMaxClick.bind(this)}>Max</wui-link>`:null}bottomTemplate(){return this.readOnly?null:c`<wui-flex alignItems="center" justifyContent="space-between">
@@ -187,7 +187,7 @@ ${this.value??""}</textarea
       <wui-flex alignItems="center" gap="01" justifyContent="flex-end">
         ${this.maxAmountTemplate()} ${this.actionTemplate()}
       </wui-flex>
-    </wui-flex>`}onInputChange(e){l.setTokenAmount(e.detail)}onMaxClick(){if(this.token){const e=H.bigNumber(this.token.quantity.numeric);l.setTokenAmount(Number(e.toFixed(20)))}}};A.styles=te;P([d({type:Object})],A.prototype,"token",void 0);P([d({type:Boolean})],A.prototype,"readOnly",void 0);P([d({type:Number})],A.prototype,"sendTokenAmount",void 0);P([d({type:Boolean})],A.prototype,"isInsufficientBalance",void 0);A=P([x("w3m-input-token")],A);const ie=v`
+    </wui-flex>`}onInputChange(e){l.setTokenAmount(e.detail)}onMaxClick(){if(this.token){const e=L.bigNumber(this.token.quantity.numeric);l.setTokenAmount(Number(e.toFixed(20)))}}};A.styles=te;P([d({type:Object})],A.prototype,"token",void 0);P([d({type:Boolean})],A.prototype,"readOnly",void 0);P([d({type:Number})],A.prototype,"sendTokenAmount",void 0);P([d({type:Boolean})],A.prototype,"isInsufficientBalance",void 0);A=P([x("w3m-input-token")],A);const ie=v`
   :host {
     display: block;
   }
